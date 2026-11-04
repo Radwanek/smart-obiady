@@ -15,57 +15,61 @@ def generate_weekly_meal_plan(promotions: List[Dict[str, Any]]) -> Optional[Dict
         print("GEMINI_API_KEY is not configured!")
         return None
         
-    # We select up to 30 relevant high-quality promotions across stores
     sample_deals = []
     for d in promotions[:40]:
         sample_deals.append({
             "store": d.get("store"),
             "name": d.get("name"),
             "price": d.get("price"),
-            "category": d.get("category")
+            "category": d.get("category"),
+            "nutri_score": d.get("nutri_score", "A"),
+            "clean_label": d.get("clean_label", "CLEAN")
         })
         
     prompt = f"""
-Jesteś profesjonalnym szefem kuchni oraz dietetykiem.
-Twoim celem jest stworzenie kompletnego, pysznego i zbilansowanego planu obiadów na tydzień (7 dań głównych) oraz 2 sycących domowych zup na bazie aktualnych promocji z marketów: Lidl, Biedronka, Kaufland.
+Jesteś profesjonalnym szefem kuchni oraz dietetykiem klinicznym.
+Twoim celem jest stworzenie prestiżowego, zdrowego i zbilansowanego planu obiadów na tydzień (7 dań głównych) oraz 2 zup na bazie aktualnych promocji z marketów: Lidl, Biedronka, Kaufland.
 
-Oto wyselekcjonowane aktualne promocje (mięsa, ryby, sery, twarogi, jogurty, warzywa):
+PRIORYTETY JAKOŚCIOWE:
+- Priorytetyzuj produkty z CZYSTYM SKŁADEM (100% świeże mięso drobiowe, wołowe, schab, ryby, warzywa, czyste twarogi, jogurty).
+- Unikaj wysoko przetworzonej żywności z konserwantami i azotynami.
+- Każde danie powinno mieć wysoki wskaźnik Nutri-Score (A lub B).
+
+Oto wyselekcjonowane aktualne promocje:
 {json.dumps(sample_deals, ensure_ascii=False, indent=2)}
 
 Wyposażenie kuchni i spiżarnia użytkownika:
-- Airfryer (frytkownica beztłuszczowa - idealna do chrupiącego drobiu, pieczonych warzyw, mięs bez tłuszczu)
-- Piekarnik (do pieczenia, zapiekanek, dań jednogarnkowych)
-- Patelnia (do szybkiego podsmażania, kotletów, sosów)
-- Garnek (do zup i gotowania dodatków)
-- Spiżarnia: Podstawowe przyprawy (sól, pieprz, papryka słodka/ostra, czosnek granulowany, majeranek, zioła prowansalskie), oliwa/olej, mąka, makaron, ryż, ziemniaki.
+- Airfryer (frytkownica beztłuszczowa - chrupiące, soczyste potrawy bez ton tłuszczu)
+- Piekarnik (zapiekanki, pieczenie, pieczenie warzyw i mięs)
+- Patelnia (szybkie podsmażanie, steki, potrawki)
+- Garnek (zupy i bazy)
+- Spiżarnia: Podstawowe przyprawy, zioła, oliwa, czosnek, cebula, mąka, makaron/ryż, ziemniaki.
 
 Zasady:
-1. Zaproponuj dokładnie 7 obiadów:
-   - Poniedziałek, Wtorek, Środa, Czwartek, Piątek, Sobota, Niedziela
-2. Zaproponuj dokładnie 2 zupy:
-   - Zupa 1, Zupa 2
-3. W każdym posiłku maksymalnie wykorzystaj produkty z powyższej listy promocji (podaj nazwę przecenionego produktu, sklep i cenę).
-4. Wykorzystaj sprzęt kuchenny – niech przynajmniej 2-3 dania będą zrobione w Airfryerze, inne w piekarniku lub na patelni.
-5. Przepisy mają być praktyczne, konkretne i łatwe do powtórzenia w domu.
+1. Zaproponuj dokładnie 7 obiadów (Poniedziałek - Niedziela) i 2 zupy (Zupa 1, Zupa 2).
+2. Wskaż sprzęt dla każdego dania (np. Airfryer, Piekarnik, Patelnia, Garnek).
+3. Każde danie musi wykorzystywać składniki z powyższej listy promocji.
+4. Przepisy mają być konkretne, apetyczne i zdrowe.
 
-Zwróć odpowiedź w czystym formacie JSON o poniższej strukturze:
+Zwróć odpowiedź w czystym formacie JSON:
 {{
-  "weekly_summary": "Krótki 2-3 zdaniowy opis pomysłu na ten tydzień i największych oszczędności.",
+  "weekly_summary": "Krótki 2-3 zdaniowy opis pomysłu na ten tydzień z akcentem na czysty skład, zdrowe białko i oszczędności.",
   "meals": [
     {{
       "day": "Poniedziałek",
       "type": "Obiad",
-      "title": "Chrupiące podudzia z kurczaka w ziołach z ziemniaczkami",
+      "title": "Chrupiący filet z indyka z pieczonymi ziołowymi ziemniaczkami",
       "equipment": "Airfryer",
-      "prep_time": "35 min",
+      "prep_time": "30 min",
+      "nutri_score": "A",
       "discounted_ingredients": [
-        {{"store": "Biedronka", "name": "Świeże podudzie z kurczaka", "price": "7.99 zł"}}
+        {{"store": "Lidl", "name": "Indyk filet z piersi XXL", "price": "19.99 zł"}}
       ],
-      "pantry_ingredients": ["ziemniaki", "papryka słodka", "czosnek", "oliwa"],
+      "pantry_ingredients": ["ziemniaki", "papryka słodka", "oliwa z oliwek", "czosnek"],
       "instructions": [
-        "Podudzia osusz i natrzyj oliwą, słodką papryką, czosnkiem i solą.",
-        "Włóż do koszyka Airfryera na 180°C na 25-30 minut, obracając w połowie.",
-        "Podawaj z pieczonymi ziemniakami i ulubioną surówką."
+        "Indyka pokrój na zgrabne steki, osusz i natrzyj oliwą oraz przyprawami.",
+        "Włóż do Airfryera na 180°C na 14-16 minut, obracając raz w połowie pieczenia.",
+        "Podawaj z chrupiącymi ziemniaczkami i świeżą surówką."
       ]
     }}
   ]
@@ -76,7 +80,7 @@ Zwróć odpowiedź w czystym formacie JSON o poniższej strukturze:
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
-            "temperature": 0.4,
+            "temperature": 0.35,
             "responseMimeType": "application/json"
         }
     }
@@ -95,10 +99,8 @@ Zwróć odpowiedź w czystym formacie JSON o poniższej strukturze:
                     return json.loads(raw_text)
                 else:
                     last_error = f"{model_name}: {resp.status_code} - {resp.text[:120]}"
-                    print(f"Warning: {last_error}")
         except Exception as e:
             last_error = f"{model_name}: {e}"
-            print(f"Warning exception: {last_error}")
             
-    print(f"Failed to generate meal plan with all candidate models. Last error: {last_error}")
+    print(f"Failed to generate meal plan with candidate models. Last error: {last_error}")
     return None

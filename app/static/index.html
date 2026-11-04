@@ -2,123 +2,166 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tanie Obiady z Promocji | Lidl, Biedronka, Kaufland</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Smart Obiady • Promocje & Czysty Skład</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-  <div class="app-container">
-    <!-- Top Header -->
-    <header class="header">
-      <div class="brand">
-        <div class="logo-icon">🥘</div>
-        <div>
-          <h1>Smart Obiady</h1>
-          <p class="subtitle">Promocje Lidl • Biedronka • Kaufland & AI Chef</p>
+<body class="ios-app">
+  <div class="app-wrapper">
+    
+    <!-- Top Navigation Header -->
+    <header class="app-header">
+      <div class="brand-container">
+        <div class="brand-symbol">
+          <span>🥘</span>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-title">Smart Obiady</h1>
+          <p class="brand-sub">Lidl • Biedronka • Kaufland & Czysty Skład</p>
         </div>
       </div>
-      <div class="header-actions">
-        <button id="refreshBtn" class="btn btn-primary" onclick="triggerRefresh()">
-          <span class="btn-icon">⚡</span>
-          <span class="btn-text">Generuj Nowy Plan</span>
+      <div class="header-action">
+        <button id="refreshBtn" class="ios-btn ios-btn-primary" onclick="triggerRefresh()">
+          <span class="btn-spinner hidden" id="btnSpinner"></span>
+          <span class="btn-icon" id="btnIcon">⚡</span>
+          <span class="btn-label" id="btnLabel">Nowy Plan</span>
         </button>
       </div>
     </header>
 
-    <!-- Status Banner -->
-    <section class="status-banner">
-      <div class="status-info">
-        <span class="status-dot" id="statusDot"></span>
-        <span id="statusText">Sprawdzanie stanu bazy...</span>
+    <!-- iOS Glass Status Capsule -->
+    <div class="status-capsule">
+      <div class="capsule-left">
+        <span class="pulse-indicator" id="statusDot"></span>
+        <span class="capsule-text" id="statusText">Sprawdzanie ofert...</span>
       </div>
-      <div class="schedule-pill">
-        ⏰ Aktualizacje: <b>07:00, 15:00, 18:00</b>
+      <div class="capsule-schedule">
+        ⏰ 07:00 • 15:00 • 18:00
       </div>
-    </section>
+    </div>
 
-    <!-- Navigation Tabs -->
-    <nav class="nav-tabs">
-      <button class="tab-btn active" onclick="switchTab('meals')">
-        📅 Plan Obiadów na Tydzień
+    <!-- Segmented Navigation Control (iOS Style) -->
+    <nav class="segmented-control" role="tablist">
+      <div class="segment-indicator" id="segmentIndicator"></div>
+      <button class="segment-btn active" onclick="switchTab('meals', this)">
+        <span>📅 Obiady na Tydzień</span>
       </button>
-      <button class="tab-btn" onclick="switchTab('deals')">
-        🏷️ Przegląd Promocji
+      <button class="segment-btn" onclick="switchTab('deals', this)">
+        <span>🏷️ Promocje & Jakość</span>
       </button>
-      <button class="tab-btn" onclick="switchTab('shopping')">
-        🛒 Lista Zakupów
+      <button class="segment-btn" onclick="switchTab('shopping', this)">
+        <span>🛒 Lista Zakupów</span>
       </button>
     </nav>
 
     <!-- TAB 1: MEAL PLAN -->
-    <main id="tab-meals" class="tab-content active">
-      <div id="planSummaryCard" class="summary-card hidden">
-        <div class="summary-badge">💡 Strategia Tygodnia</div>
-        <p id="planSummaryText"></p>
-      </div>
-
-      <div id="mealsLoading" class="loading-state">
-        <div class="spinner"></div>
-        <p>Wczytywanie planu obiadów...</p>
-      </div>
-
-      <div id="mealsContainer" class="meals-grid"></div>
-
-      <!-- Soups section -->
-      <section class="soups-section">
-        <div class="section-title">
-          <h2>🍲 Zupy Tygodnia</h2>
-          <span class="section-subtitle">Sycące bazy na 2-3 dni z tanich warzyw i mięs</span>
+    <main id="tab-meals" class="tab-pane active">
+      <!-- Strategy Hero Card -->
+      <section id="planSummaryCard" class="ios-hero-card hidden">
+        <div class="hero-chip">
+          <span class="chip-dot"></span>
+          <span>STRATEGIA ZDROWEGO MENU</span>
         </div>
-        <div id="soupsContainer" class="meals-grid"></div>
+        <h2 class="hero-headline">Zdrowe obiady bez chemii na ten tydzień</h2>
+        <p id="planSummaryText" class="hero-body"></p>
+        <div class="hero-badges">
+          <span class="quality-badge badge-clean">🌿 100% Czysty Skład</span>
+          <span class="quality-badge badge-nutri">Nutri-Score A & B</span>
+          <span class="quality-badge badge-gear">Airfryer • Piekarnik • Patelnia</span>
+        </div>
+      </section>
+
+      <div id="mealsLoading" class="loading-container">
+        <div class="ios-spinner"></div>
+        <p class="loading-label">Komponowanie zdrowego jadłospisu z promocji...</p>
+      </div>
+
+      <div id="mealsContainer" class="cards-flow"></div>
+
+      <!-- Soups Section -->
+      <section class="soups-container">
+        <div class="sub-header">
+          <div class="sub-header-icon">🍲</div>
+          <div>
+            <h3>Domowe Zupy Tygodnia</h3>
+            <p>Odżywcze bazy na 2-3 dni z tanich warzyw i mięsa</p>
+          </div>
+        </div>
+        <div id="soupsContainer" class="cards-flow"></div>
       </section>
     </main>
 
-    <!-- TAB 2: PROMOTIONS -->
-    <section id="tab-deals" class="tab-content">
-      <div class="filters-bar">
-        <div class="filter-group">
-          <label>Sklep:</label>
-          <div class="pill-group" id="storeFilters">
-            <button class="pill active" onclick="setFilter('store', 'Wszystkie')">Wszystkie</button>
-            <button class="pill" onclick="setFilter('store', 'Lidl')">Lidl</button>
-            <button class="pill" onclick="setFilter('store', 'Biedronka')">Biedronka</button>
-            <button class="pill" onclick="setFilter('store', 'Kaufland')">Kaufland</button>
+    <!-- TAB 2: PROMOTIONS CATALOG -->
+    <section id="tab-deals" class="tab-pane">
+      <div class="filter-sheet">
+        <div class="filter-row">
+          <span class="filter-caption">Market:</span>
+          <div class="pill-bar" id="storeFilters">
+            <button class="pill-item active" onclick="setFilter('store', 'Wszystkie')">Wszystkie</button>
+            <button class="pill-item" onclick="setFilter('store', 'Lidl')">Lidl</button>
+            <button class="pill-item" onclick="setFilter('store', 'Biedronka')">Biedronka</button>
+            <button class="pill-item" onclick="setFilter('store', 'Kaufland')">Kaufland</button>
           </div>
         </div>
-        <div class="filter-group">
-          <label>Kategoria:</label>
-          <div class="pill-group" id="categoryFilters">
-            <button class="pill active" onclick="setFilter('category', 'Wszystkie')">Wszystkie</button>
-            <button class="pill" onclick="setFilter('category', 'Mięso i ryby')">🥩 Mięso i ryby</button>
-            <button class="pill" onclick="setFilter('category', 'Nabiał i sery')">🧀 Nabiał i sery</button>
-            <button class="pill" onclick="setFilter('category', 'Warzywa i baza')">🥦 Warzywa i baza</button>
+        <div class="filter-row">
+          <span class="filter-caption">Kategoria:</span>
+          <div class="pill-bar" id="categoryFilters">
+            <button class="pill-item active" onclick="setFilter('category', 'Wszystkie')">Wszystkie</button>
+            <button class="pill-item" onclick="setFilter('category', 'Mięso i ryby')">🥩 Mięso i ryby</button>
+            <button class="pill-item" onclick="setFilter('category', 'Nabiał i sery')">🧀 Nabiał i sery</button>
+            <button class="pill-item" onclick="setFilter('category', 'Warzywa i baza')">🥦 Warzywa</button>
           </div>
         </div>
       </div>
 
-      <div id="dealsContainer" class="deals-grid">
-        <!-- Rendered dynamically -->
-      </div>
+      <div id="dealsContainer" class="deals-waterfall"></div>
     </section>
 
     <!-- TAB 3: SHOPPING LIST -->
-    <section id="tab-shopping" class="tab-content">
-      <div class="shopping-header">
-        <h2>Twój koszyk na ten tydzień</h2>
-        <p>Zaznaczaj kupione składniki podczas wizyty w markecie</p>
+    <section id="tab-shopping" class="tab-pane">
+      <div class="shopping-banner">
+        <h2>Smart Koszyk Zakupowy</h2>
+        <p>Przecenione składniki z czystym składem podzielone na sklepy</p>
       </div>
-      <div id="shoppingListContainer" class="shopping-columns">
-        <!-- Grouped by store -->
-      </div>
+      <div id="shoppingListContainer" class="shopping-layout"></div>
     </section>
 
-    <footer class="footer">
-      <p>Dopasowane pod Twój sprzęt: <b>Airfryer</b> • <b>Piekarnik</b> • <b>Patelnia</b> • <b>Przyprawy</b></p>
-      <p class="footer-sub">Smart Obiady v1.0 • Railway & Gemini AI</p>
+    <!-- iOS Lightbox Modal for Flyer Images -->
+    <div id="imageLightbox" class="lightbox-modal hidden" onclick="handleLightboxClick(event)">
+      <div class="lightbox-backdrop"></div>
+      <div class="lightbox-dialog" onclick="event.stopPropagation()">
+        <div class="lightbox-top-bar">
+          <div class="lightbox-title-box">
+            <h4 id="lightboxTitle">Oryginalna strona gazetki</h4>
+            <span id="lightboxSub">Kliknij dwukrotnie lub użyj przycisków, aby powiększyć</span>
+          </div>
+          <div class="lightbox-controls">
+            <button class="zoom-btn" onclick="zoomIn()" title="Powiększ">+</button>
+            <button class="zoom-btn" onclick="zoomOut()" title="Pomniejsz">-</button>
+            <button class="zoom-btn" onclick="resetZoom()" title="Reset">1:1</button>
+            <button class="close-btn" onclick="closeLightbox()" title="Zamknij">✕</button>
+          </div>
+        </div>
+        <div class="lightbox-viewport" id="lightboxViewport" ondblclick="toggleZoomDblClick()">
+          <img id="lightboxImg" src="" alt="Gazetka" class="lightbox-image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-pills">
+        <span class="f-pill">⚡ Airfryer</span>
+        <span class="f-pill">🔥 Piekarnik</span>
+        <span class="f-pill">🍳 Patelnia</span>
+        <span class="f-pill">🌿 Czysty Skład</span>
+      </div>
+      <p class="footer-legal">Smart Obiady v2.0 • iOS Inspired • Biały design premium</p>
     </footer>
+
   </div>
 
   <script src="/app.js"></script>

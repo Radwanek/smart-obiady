@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanie Obiady z Promocji | Lidl, Biedronka, Kaufland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Header -->
+    <header class="header">
+      <div class="brand">
+        <div class="logo-icon">🥘</div>
+        <div>
+          <h1>Smart Obiady</h1>
+          <p class="subtitle">Promocje Lidl • Biedronka • Kaufland & AI Chef</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="refreshBtn" class="btn btn-primary" onclick="triggerRefresh()">
+          <span class="btn-icon">⚡</span>
+          <span class="btn-text">Generuj Nowy Plan</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Status Banner -->
+    <section class="status-banner">
+      <div class="status-info">
+        <span class="status-dot" id="statusDot"></span>
+        <span id="statusText">Sprawdzanie stanu bazy...</span>
+      </div>
+      <div class="schedule-pill">
+        ⏰ Aktualizacje: <b>07:00, 15:00, 18:00</b>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" onclick="switchTab('meals')">
+        📅 Plan Obiadów na Tydzień
+      </button>
+      <button class="tab-btn" onclick="switchTab('deals')">
+        🏷️ Przegląd Promocji
+      </button>
+      <button class="tab-btn" onclick="switchTab('shopping')">
+        🛒 Lista Zakupów
+      </button>
+    </nav>
+
+    <!-- TAB 1: MEAL PLAN -->
+    <main id="tab-meals" class="tab-content active">
+      <div id="planSummaryCard" class="summary-card hidden">
+        <div class="summary-badge">💡 Strategia Tygodnia</div>
+        <p id="planSummaryText"></p>
+      </div>
+
+      <div id="mealsLoading" class="loading-state">
+        <div class="spinner"></div>
+        <p>Wczytywanie planu obiadów...</p>
+      </div>
+
+      <div id="mealsContainer" class="meals-grid"></div>
+
+      <!-- Soups section -->
+      <section class="soups-section">
+        <div class="section-title">
+          <h2>🍲 Zupy Tygodnia</h2>
+          <span class="section-subtitle">Sycące bazy na 2-3 dni z tanich warzyw i mięs</span>
+        </div>
+        <div id="soupsContainer" class="meals-grid"></div>
+      </section>
+    </main>
+
+    <!-- TAB 2: PROMOTIONS -->
+    <section id="tab-deals" class="tab-content">
+      <div class="filters-bar">
+        <div class="filter-group">
+          <label>Sklep:</label>
+          <div class="pill-group" id="storeFilters">
+            <button class="pill active" onclick="setFilter('store', 'Wszystkie')">Wszystkie</button>
+            <button class="pill" onclick="setFilter('store', 'Lidl')">Lidl</button>
+            <button class="pill" onclick="setFilter('store', 'Biedronka')">Biedronka</button>
+            <button class="pill" onclick="setFilter('store', 'Kaufland')">Kaufland</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Kategoria:</label>
+          <div class="pill-group" id="categoryFilters">
+            <button class="pill active" onclick="setFilter('category', 'Wszystkie')">Wszystkie</button>
+            <button class="pill" onclick="setFilter('category', 'Mięso i ryby')">🥩 Mięso i ryby</button>
+            <button class="pill" onclick="setFilter('category', 'Nabiał i sery')">🧀 Nabiał i sery</button>
+            <button class="pill" onclick="setFilter('category', 'Warzywa i baza')">🥦 Warzywa i baza</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="dealsContainer" class="deals-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- TAB 3: SHOPPING LIST -->
+    <section id="tab-shopping" class="tab-content">
+      <div class="shopping-header">
+        <h2>Twój koszyk na ten tydzień</h2>
+        <p>Zaznaczaj kupione składniki podczas wizyty w markecie</p>
+      </div>
+      <div id="shoppingListContainer" class="shopping-columns">
+        <!-- Grouped by store -->
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Dopasowane pod Twój sprzęt: <b>Airfryer</b> • <b>Piekarnik</b> • <b>Patelnia</b> • <b>Przyprawy</b></p>
+      <p class="footer-sub">Smart Obiady v1.0 • Railway & Gemini AI</p>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

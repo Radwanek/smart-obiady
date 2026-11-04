@@ -132,9 +132,9 @@ async function loadMealPlan() {
       summaryCard.classList.remove('hidden');
       summaryText.innerText = data.plan.weekly_summary || "Zdrowe, zbilansowane obiady z czystym składem dla 2 osób bazujące na bieżących przecenach w dyskontach.";
       
-      // Update budget tracker
-      const dinnersCost = data.plan.total_estimated_cost || "~185 zł";
-      const budgetRem = data.plan.budget_remaining || "~415 zł";
+      // Update budget tracker (600 zł / month -> 150 zł / week)
+      const dinnersCost = data.plan.total_estimated_cost || "~84 zł";
+      const budgetRem = data.plan.budget_remaining || "~66 zł (z puli 150 zł/tydz.)";
       
       const dinnersEl = document.getElementById('dinnersCostVal');
       const remEl = document.getElementById('budgetRemVal');
@@ -143,10 +143,9 @@ async function loadMealPlan() {
       if (dinnersEl) dinnersEl.innerText = dinnersCost;
       if (remEl) remEl.innerText = budgetRem;
       if (barEl) {
-        // Parse approximate number from cost
         const numMatch = dinnersCost.match(/(\d+)/);
-        const spent = numMatch ? parseInt(numMatch[1], 10) : 185;
-        const pct = Math.min(Math.round((spent / 600) * 100), 100);
+        const spent = numMatch ? parseInt(numMatch[1], 10) : 84;
+        const pct = Math.min(Math.round((spent / 150) * 100), 100);
         barEl.style.width = `${pct}%`;
       }
       

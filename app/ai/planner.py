@@ -27,61 +27,62 @@ def generate_weekly_meal_plan(promotions: List[Dict[str, Any]]) -> Optional[Dict
         })
         
     prompt = f"""
-Jesteś profesjonalnym szefem kuchni oraz dietetykiem klinicznym i doradcą budżetowym.
-Twoim celem jest stworzenie prestiżowego, zdrowego i ekonomicznego planu obiadów na tydzień dla MŁODEJ PARY (2 OSOBY: użytkownik i jego dziewczyna).
+Jesteś mistrzem oszczędnego, zdrowego gotowania (smart budgeting chef).
+Twoim zadaniem jest ułożenie genialnego, sycącego i zdrowego tygodniowego planu obiadów dla PARY (2 OSOBY: użytkownik i jego dziewczyna).
 
-DANE BUDŻETOWE I PROFIL:
-- Liczba osób: DOKŁADNIE 2 OSOBY (każdy obiad ma być sycącą podwójną porcją dla pary).
-- Całkowity budżet tygodniowy na jedzenie: 600 ZŁ.
-- Cel kosztowy na obiady + zupy: Koszt wszystkich 7 obiadów i 2 zup ma zamykać się w granicach ok. 160 - 240 zł łącznie dla 2 osób (czyli ok. 15-28 zł za cały obiad dla dwojga, ~8-14 zł na osobę).
-- Dzięki temu z budżetu 600 zł zostaje parze jeszcze ponad 350-400 zł na śniadania, kolacje, owoce i dobre kawy!
+DANE BUDŻETOWE (BARDZO WAŻNE):
+- Budżet całkowity na jedzenie wynosi: 600 ZŁ NA MIESIĄC na 2 osoby!
+- W przeliczeniu na 1 tydzień para ma do dyspozycji: DOKŁADNIE 150 ZŁ / TYDZIEŃ.
+- Twój cel: Wszystkie 7 obiadów i 2 zupy na cały tydzień dla 2 osób muszą zamknąć się łącznie w kwocie ok. 75 - 90 ZŁ!
+- Oznacza to, że pojedynczy obiad dla DWOJGA kosztuje średnio tylko ok. 10 - 13 zł (czyli zaledwie ~5 - 6.50 zł na osobę!).
+- Z tygodniowej puli 150 zł musi zostać jeszcze ok. 60 - 75 zł na podstawowe śniadania i kolacje (jajka, pieczywo, płatki, herbata).
 
-PRIORYTETY JAKOŚCIOWE:
-- Czysty skład (100% świeże mięso drobiowe, wieprzowe, wołowe, ryby, warzywa, czyste twarogi, jogurty).
-- Unikaj wysoko przetworzonej żywności z konserwantami i azotynami.
-- Wysoki wskaźnik Nutri-Score (A lub B) dla dań.
+JAK TO OSIĄGNĄĆ DZIĘKI PROMOCJOM I SPRZĘTOWI:
+- Poluj na tanie i wartościowe części drobiu (podudzia z kurczaka za 7.99 zł/kg, udka, skrzydełka).
+- Kupuj mięso w promocjach XXL (np. szynka wieprzowa 9.99 zł/kg - 1 kg starcza na 2 obiady dla dwojga!).
+- Tanie bazy: Ziemniaki z promocji (0.99 zł/kg), warzywa rosołowe, marchew, kapusta, cebula.
+- Duży garnek domowej zupy (np. zupa jarzynowa z indykiem lub gulaszowa) kosztuje ~12-15 zł za cały garnek i starcza na 2-3 dni!
+- Airfryer i piekarnik robią z tanich składników restauracyjne, chrupiące dania bez marnowania drogiego tłuszczu.
 
 Oto wyselekcjonowane aktualne promocje (Lidl, Biedronka, Kaufland):
 {json.dumps(sample_deals, ensure_ascii=False, indent=2)}
 
-Wyposażenie kuchni pary:
-- Airfryer (frytkownica beztłuszczowa - chrupiące mięsa i pieczone warzywa)
-- Piekarnik (zapiekanki, pieczenie dla 2 osób)
-- Patelnia (szybkie podsmażanie, steki, potrawki)
-- Garnek (zupy i bazy)
-- Spiżarnia: Podstawowe przyprawy, zioła, oliwa, czosnek, cebula, mąka, makaron/ryż, ziemniaki.
+Wyposażenie kuchni:
+- Airfryer, Piekarnik, Patelnia, Garnek.
+- Podstawowe przyprawy w domu: sól, pieprz, papryka, czosnek, zioła, oliwa/olej, mąka, ryż/makaron.
 
 Zasady:
 1. Zaproponuj dokładnie 7 obiadów dla 2 osób (Poniedziałek - Niedziela) i 2 zupy (Zupa 1, Zupa 2).
-2. Wskaż sprzęt dla każdego dania (np. Airfryer, Piekarnik, Patelnia, Garnek).
-3. Każde danie musi wykorzystywać składniki z powyższej listy promocji.
-4. Oszacuj realny koszt każdego obiadu dla 2 osób (cost_for_two) oraz w przeliczeniu na 1 osobę (cost_per_person).
-5. Oszacuj łączny koszt obiadów na tydzień (weekly_total_cost) oraz ile zostaje z budżetu 600 zł (budget_remaining).
+2. Każde danie ma podwójną porcję dla dwojga.
+3. Oblicz realny koszt każdego obiadu dla 2 osób (cost_for_two ok. 10-14 zł) i na osobę (cost_per_person ok. 5-7 zł).
+4. Oszacuj łączny koszt obiadów na tydzień (weekly_total_cost: ok. 80-90 zł) oraz pozostałą kwotę z tygodniowej puli 150 zł.
 
 Zwróć odpowiedź w czystym formacie JSON:
 {{
-  "weekly_summary": "Krótki 2-3 zdaniowy opis pomysłu na ten tydzień dla 2 osób z uwzględnieniem budżetu 600 zł i oszczędności.",
-  "weekly_total_cost": "np. 185 zł",
-  "budget_remaining": "np. 415 zł na śniadania, kolacje i przekąski",
+  "weekly_summary": "Krótkie podsumowanie jak zmieścić się w 600 zł miesięcznie (150 zł/tydz.) gotując pysznie dla dwojga.",
+  "weekly_total_cost": "np. 84.50 zł",
+  "budget_remaining": "np. 65.50 zł na śniadania i kolacje (z puli 150 zł/tydz.)",
+  "monthly_dinners_estimate": "np. ok. 340 zł / 600 zł na cały miesiąc",
   "meals": [
     {{
       "day": "Poniedziałek",
       "type": "Obiad",
-      "title": "Chrupiący filet z indyka z pieczonymi ziołowymi ziemniaczkami",
+      "title": "Chrupiące podudzia z kurczaka z pieczonymi ziemniaczkami w ziołach",
       "equipment": "Airfryer",
-      "prep_time": "30 min",
+      "prep_time": "35 min",
       "nutri_score": "A",
       "portions": 2,
-      "cost_for_two": "21.50 zł",
-      "cost_per_person": "10.75 zł",
+      "cost_for_two": "10.50 zł",
+      "cost_per_person": "5.25 zł",
       "discounted_ingredients": [
-        {{"store": "Lidl", "name": "Indyk filet z piersi XXL", "price": "19.99 zł"}}
+        {{"store": "Biedronka", "name": "Świeże podudzie z kurczaka (0.6 kg)", "price": "4.80 zł"}},
+        {{"store": "Kaufland", "name": "Ziemniaki polskie (1 kg)", "price": "0.99 zł"}}
       ],
-      "pantry_ingredients": ["ziemniaki", "papryka słodka", "oliwa z oliwek", "czosnek"],
+      "pantry_ingredients": ["oliwa", "papryka słodka", "czosnek", "majeranek", "sól"],
       "instructions": [
-        "Dwie porcje fileta z indyka osusz i natrzyj oliwą oraz przyprawami.",
-        "Włóż do Airfryera na 180°C na 14-16 minut, obracając w połowie.",
-        "Podawaj dla dwojga z pieczonymi ziemniaczkami i świeżą surówką."
+        "Podudzia osusz, natrzyj oliwą, słodką papryką, solą i czosnkiem.",
+        "Ziemniaki pokrój w łódeczki i dopraw majerankiem.",
+        "Piecz w Airfryerze w 180°C przez 25 minut aż będą złociste i chrupiące."
       ]
     }}
   ]

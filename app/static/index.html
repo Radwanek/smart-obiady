@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Smart Obiady • Promocje & Czysty Skład</title>
+  <title>Smart Obiady • 2 Osoby • Budżet 600 zł</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
         </div>
         <div class="brand-text">
           <h1 class="brand-title">Smart Obiady</h1>
-          <p class="brand-sub">Lidl • Biedronka • Kaufland & Czysty Skład</p>
+          <p class="brand-sub">👥 Menu dla 2 osób • 💰 Budżet: 600 zł • Czysty Skład</p>
         </div>
       </div>
       <div class="header-action">
@@ -45,28 +45,53 @@
 
     <!-- Segmented Navigation Control (iOS Style) -->
     <nav class="segmented-control" role="tablist">
-      <div class="segment-indicator" id="segmentIndicator"></div>
       <button class="segment-btn active" onclick="switchTab('meals', this)">
-        <span>📅 Obiady na Tydzień</span>
+        <span>📅 Obiady dla 2 Osób</span>
       </button>
       <button class="segment-btn" onclick="switchTab('deals', this)">
         <span>🏷️ Promocje & Jakość</span>
       </button>
       <button class="segment-btn" onclick="switchTab('shopping', this)">
-        <span>🛒 Lista Zakupów</span>
+        <span>🛒 Koszyk Zakupowy</span>
       </button>
     </nav>
 
     <!-- TAB 1: MEAL PLAN -->
     <main id="tab-meals" class="tab-pane active">
-      <!-- Strategy Hero Card -->
+      <!-- Strategy Hero Card with Budget Tracker -->
       <section id="planSummaryCard" class="ios-hero-card hidden">
-        <div class="hero-chip">
-          <span class="chip-dot"></span>
-          <span>STRATEGIA ZDROWEGO MENU</span>
+        <div class="hero-top-row">
+          <div class="hero-chip">
+            <span class="chip-dot"></span>
+            <span>STRATEGIA BUDŻETOWA DLA 2 OSÓB</span>
+          </div>
+          <span class="persons-pill">👥 Porcje dla 2 osób</span>
         </div>
-        <h2 class="hero-headline">Zdrowe obiady bez chemii na ten tydzień</h2>
+        
+        <h2 class="hero-headline">Pyszne obiady we dwoje w budżecie 600 zł</h2>
         <p id="planSummaryText" class="hero-body"></p>
+
+        <!-- Budget Gauge iOS Widget -->
+        <div class="budget-widget">
+          <div class="budget-row">
+            <div>
+              <span class="b-label">Szacowany koszt obiadów (7 dni dla dwojga):</span>
+              <div class="b-value" id="dinnersCostVal">~180 zł</div>
+            </div>
+            <div class="b-right">
+              <span class="b-label">Zostaje z 600 zł na śniadania/kolacje:</span>
+              <div class="b-rem" id="budgetRemVal">~420 zł</div>
+            </div>
+          </div>
+          <div class="budget-bar-track">
+            <div class="budget-bar-fill" id="budgetBarFill" style="width: 32%;"></div>
+          </div>
+          <div class="budget-legend">
+            <span>🟢 Obiady i zupy: ~30-35% budżetu</span>
+            <span>Pozostałe 65-70% na resztę tygodnia</span>
+          </div>
+        </div>
+
         <div class="hero-badges">
           <span class="quality-badge badge-clean">🌿 100% Czysty Skład</span>
           <span class="quality-badge badge-nutri">Nutri-Score A & B</span>
@@ -76,7 +101,7 @@
 
       <div id="mealsLoading" class="loading-container">
         <div class="ios-spinner"></div>
-        <p class="loading-label">Komponowanie zdrowego jadłospisu z promocji...</p>
+        <p class="loading-label">Dopasowywanie porcji dla 2 osób i liczenie budżetu...</p>
       </div>
 
       <div id="mealsContainer" class="cards-flow"></div>
@@ -86,8 +111,8 @@
         <div class="sub-header">
           <div class="sub-header-icon">🍲</div>
           <div>
-            <h3>Domowe Zupy Tygodnia</h3>
-            <p>Odżywcze bazy na 2-3 dni z tanich warzyw i mięsa</p>
+            <h3>Domowe Zupy Tygodnia dla Dwojga</h3>
+            <p>Porcje na 2-3 dni z tanich warzyw rosołowych i świeżego mięsa</p>
           </div>
         </div>
         <div id="soupsContainer" class="cards-flow"></div>
@@ -123,8 +148,8 @@
     <!-- TAB 3: SHOPPING LIST -->
     <section id="tab-shopping" class="tab-pane">
       <div class="shopping-banner">
-        <h2>Smart Koszyk Zakupowy</h2>
-        <p>Przecenione składniki z czystym składem podzielone na sklepy</p>
+        <h2>Smart Koszyk dla 2 Osób</h2>
+        <p>Przecenione składniki z czystym składem podzielone na sklepy (budżet: 600 zł)</p>
       </div>
       <div id="shoppingListContainer" class="shopping-layout"></div>
     </section>
@@ -154,12 +179,12 @@
     <!-- Footer -->
     <footer class="app-footer">
       <div class="footer-pills">
+        <span class="f-pill">👥 Gotowanie dla 2 osób</span>
+        <span class="f-pill">💰 Tygodniowy budżet: 600 zł</span>
         <span class="f-pill">⚡ Airfryer</span>
-        <span class="f-pill">🔥 Piekarnik</span>
-        <span class="f-pill">🍳 Patelnia</span>
         <span class="f-pill">🌿 Czysty Skład</span>
       </div>
-      <p class="footer-legal">Smart Obiady v2.0 • iOS Inspired • Biały design premium</p>
+      <p class="footer-legal">Smart Obiady v2.1 • iOS Inspired • Biały design premium</p>
     </footer>
 
   </div>

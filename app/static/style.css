@@ -288,6 +288,15 @@ body.ios-app {
   overflow: hidden;
 }
 
+.hero-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
 .hero-chip {
   display: inline-flex;
   align-items: center;
@@ -300,7 +309,16 @@ body.ios-app {
   letter-spacing: 0.6px;
   padding: 4px 10px;
   border-radius: 999px;
-  margin-bottom: 10px;
+}
+
+.persons-pill {
+  font-size: 0.76rem;
+  font-weight: 800;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(29, 78, 216, 0.2);
 }
 
 .chip-dot {
@@ -323,6 +341,72 @@ body.ios-app {
   color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 16px;
+}
+
+/* Budget Gauge iOS Widget */
+.budget-widget {
+  background: #f8fafc;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.budget-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.b-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.b-value {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #059669;
+}
+
+.b-right {
+  text-align: right;
+}
+
+.b-rem {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+.budget-bar-track {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.budget-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+  border-radius: 999px;
+  transition: width 0.6s var(--spring-ease);
+}
+
+.budget-legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--text-tertiary);
+  font-weight: 600;
 }
 
 .hero-badges {
@@ -446,6 +530,19 @@ body.ios-app {
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--text-tertiary);
+}
+
+.cost-badge-ios {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid rgba(4, 120, 87, 0.25);
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 800;
 }
 
 /* ============================================================

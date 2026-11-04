@@ -130,7 +130,25 @@ async function loadMealPlan() {
     if (data.plan && data.plan.meals && data.plan.meals.length > 0) {
       activePlanData = data.plan;
       summaryCard.classList.remove('hidden');
-      summaryText.innerText = data.plan.weekly_summary || "Zdrowe, zbilansowane obiady z czystym składem bazujące na bieżących przecenach w dyskontach.";
+      summaryText.innerText = data.plan.weekly_summary || "Zdrowe, zbilansowane obiady z czystym składem dla 2 osób bazujące na bieżących przecenach w dyskontach.";
+      
+      // Update budget tracker
+      const dinnersCost = data.plan.total_estimated_cost || "~185 zł";
+      const budgetRem = data.plan.budget_remaining || "~415 zł";
+      
+      const dinnersEl = document.getElementById('dinnersCostVal');
+      const remEl = document.getElementById('budgetRemVal');
+      const barEl = document.getElementById('budgetBarFill');
+      
+      if (dinnersEl) dinnersEl.innerText = dinnersCost;
+      if (remEl) remEl.innerText = budgetRem;
+      if (barEl) {
+        // Parse approximate number from cost
+        const numMatch = dinnersCost.match(/(\d+)/);
+        const spent = numMatch ? parseInt(numMatch[1], 10) : 185;
+        const pct = Math.min(Math.round((spent / 600) * 100), 100);
+        barEl.style.width = `${pct}%`;
+      }
       
       const dinners = data.plan.meals.filter(m => m.type !== 'Zupa' && !m.day.toLowerCase().includes('zupa'));
       const soups = data.plan.meals.filter(m => m.type === 'Zupa' || m.day.toLowerCase().includes('zupa'));
@@ -193,14 +211,18 @@ function createMealCardHtml(meal) {
     <article class="meal-card-ios">
       <div>
         <div class="card-top-row">
-          <span class="day-pill">${escapeHtml(meal.day)}</span>
+          <div style="display:flex; align-items:center; gap:6px;">
+            <span class="day-pill">${escapeHtml(meal.day)}</span>
+            <span class="day-pill" style="background:#e0f2fe; color:#0369a1;">👥 2 porcje</span>
+          </div>
           <span class="gear-pill ${gearClass}">${gearIcon} ${escapeHtml(meal.equipment)}</span>
         </div>
 
         <h3 class="dish-heading">${escapeHtml(meal.title)}</h3>
 
-        <div class="time-row">
+        <div class="time-row" style="flex-wrap:wrap; gap:8px;">
           ${meal.prep_time ? `<span class="prep-time">⏱️ ${escapeHtml(meal.prep_time)}</span>` : ''}
+          ${meal.cost_for_two ? `<span class="cost-badge-ios">💰 ${escapeHtml(meal.cost_for_two)} <span style="font-weight:500; font-size:0.7rem; opacity:0.85;">(${escapeHtml(meal.cost_per_person || '')}/os.)</span></span>` : ''}
           ${nutriHtml}
         </div>
       </div>

@@ -34,7 +34,6 @@ def init_db():
     )
     """)
     
-    # Dodaj kolumny jeśli tabela już istniała w starszej wersji
     existing_cols = [r["name"] for r in cursor.execute("PRAGMA table_info(promotions)").fetchall()]
     for col, col_type in [
         ("image_url", "TEXT"),
@@ -52,9 +51,16 @@ def init_db():
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         weekly_summary TEXT,
+        total_estimated_cost TEXT,
+        budget_remaining TEXT,
         is_active INTEGER DEFAULT 1
     )
     """)
+    
+    plan_cols = [r["name"] for r in cursor.execute("PRAGMA table_info(meal_plans)").fetchall()]
+    for col in ["total_estimated_cost", "budget_remaining"]:
+        if col not in plan_cols:
+            cursor.execute(f"ALTER TABLE meal_plans ADD COLUMN {col} TEXT")
     
     # Tabela posiłków
     cursor.execute("""
@@ -70,13 +76,22 @@ def init_db():
         pantry_ingredients TEXT,
         instructions TEXT,
         nutri_score TEXT,
+        cost_for_two TEXT,
+        cost_per_person TEXT,
+        portions INTEGER DEFAULT 2,
         FOREIGN KEY (plan_id) REFERENCES meal_plans(id)
     )
     """)
     
     meal_cols = [r["name"] for r in cursor.execute("PRAGMA table_info(meals)").fetchall()]
-    if "nutri_score" not in meal_cols:
-        cursor.execute("ALTER TABLE meals ADD COLUMN nutri_score TEXT")
+    for col, col_type in [
+        ("nutri_score", "TEXT"),
+        ("cost_for_two", "TEXT"),
+        ("cost_per_person", "TEXT"),
+        ("portions", "INTEGER DEFAULT 2")
+    ]:
+        if col not in meal_cols:
+            cursor.execute(f"ALTER TABLE meals ADD COLUMN {col} {col_type}")
     
     # Tabela historii synchronizacji
     cursor.execute("""
@@ -131,7 +146,7 @@ def save_promotions(deals: List[Dict[str, Any]]) -> int:
                 now
             ))
             inserted += 1
-        except Exception as e:
+        except Exception:
             pass
             
     conn.commit()
@@ -160,21 +175,25 @@ def get_recent_promotions(limit: int = 80, store: Optional[str] = None, category
     conn.close()
     return [dict(r) for r in rows]
 
-def save_meal_plan(weekly_summary: str, meals: List[Dict[str, Any]]) -> int:
+def save_meal_plan(weekly_summary: str, meals: List[Dict[str, Any]], total_cost: str = "", budget_remaining: str = "") -> int:
     conn = get_connection()
     cursor = conn.cursor()
     
     cursor.execute("UPDATE meal_plans SET is_active = 0 WHERE is_active = 1")
-    cursor.execute("INSERT INTO meal_plans (weekly_summary, is_active) VALUES (?, 1)", (weekly_summary,))
+    cursor.execute("""
+    INSERT INTO meal_plans (weekly_summary, total_estimated_cost, budget_remaining, is_active) 
+    VALUES (?, ?, ?, 1)
+    """, (weekly_summary, total_cost, budget_remaining))
     plan_id = cursor.lastrowid
     
     for m in meals:
         cursor.execute("""
         INSERT INTO meals (
             plan_id, day, type, title, equipment, prep_time, 
-            discounted_ingredients, pantry_ingredients, instructions, nutri_score
+            discounted_ingredients, pantry_ingredients, instructions, 
+            nutri_score, cost_for_two, cost_per_person, portions
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             plan_id,
             m.get("day", ""),
@@ -185,7 +204,10 @@ def save_meal_plan(weekly_summary: str, meals: List[Dict[str, Any]]) -> int:
             json.dumps(m.get("discounted_ingredients", []), ensure_ascii=False),
             json.dumps(m.get("pantry_ingredients", []), ensure_ascii=False),
             json.dumps(m.get("instructions", []), ensure_ascii=False),
-            m.get("nutri_score", "A")
+            m.get("nutri_score", "A"),
+            m.get("cost_for_two", "ok. 20 zł"),
+            m.get("cost_per_person", "ok. 10 zł"),
+            m.get("portions", 2)
         ))
         
     conn.commit()

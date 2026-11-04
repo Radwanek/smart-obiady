@@ -32,16 +32,18 @@ def run_full_sync_task() -> dict:
         if deals:
             save_promotions(deals)
             
-        # Generowanie menu obiadowego AI
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Generowanie planu obiadów przez Gemini AI...")
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] Generowanie planu obiadów dla 2 osób (budżet 600 zł) przez Gemini AI...")
         recent_deals = get_recent_promotions(limit=50)
         plan_data = generate_weekly_meal_plan(recent_deals)
         
         if plan_data and "meals" in plan_data:
-            summary = plan_data.get("weekly_summary", "Plan obiadów na bazie aktualnych promocji")
+            summary = plan_data.get("weekly_summary", "Plan obiadów dla 2 osób na bazie aktualnych promocji")
+            total_cost = plan_data.get("weekly_total_cost", "~180 zł")
+            budget_rem = plan_data.get("budget_remaining", "~420 zł na śniadania i kolacje")
             meals = plan_data.get("meals", [])
-            plan_id = save_meal_plan(summary, meals)
-            msg = f"Sukces: Zapisano {deals_count} promocji oraz plan obiadów #{plan_id} ({len(meals)} dań)."
+            
+            plan_id = save_meal_plan(summary, meals, total_cost, budget_rem)
+            msg = f"Sukces: Zapisano {deals_count} promocji oraz plan dla 2 osób #{plan_id} ({len(meals)} dań, szacunek: {total_cost})."
             print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}")
             log_sync("SUCCESS", deals_count, msg)
             return {"status": "SUCCESS", "message": msg, "deals_count": deals_count, "meals_count": len(meals)}

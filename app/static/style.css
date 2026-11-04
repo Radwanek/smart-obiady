@@ -1,50 +1,75 @@
 /* ============================================================
-   SMART OBIADY - PURE WHITE iOS PREMIUM THEME
-   Inspired by Purposeful iOS Animations (Apple HIG)
+   SMART OBIADY - SOFT PASTEL AESTHETIC (LIFESTYLE & COUPLE)
+   Inspired by Soft Japanese/Scandinavian Pastel iOS Habit Trackers
+   Tones: Blush Pink, Soft Lavender, Sage Green, Warm Cream
    ============================================================ */
 
 :root {
-  --bg-page: #f8fafc;
+  /* Soft Pastel Palette from Reference */
+  --bg-gradient-top: #fdf2f4;
+  --bg-gradient-mid: #f5f0fa;
+  --bg-gradient-bottom: #f0fdf4;
+  
+  --bg-canvas: #faf8fc;
   --bg-card: #ffffff;
-  --bg-subtle: #f1f5f9;
-  --bg-glass: rgba(255, 255, 255, 0.85);
+  --bg-pill: #f3eef8;
   
-  --border-subtle: rgba(15, 23, 42, 0.08);
-  --border-active: rgba(37, 99, 235, 0.25);
+  --pastel-pink-soft: #fde2e4;
+  --pastel-pink-deep: #fb7185;
+  --pastel-pink-tint: #fff1f2;
   
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-tertiary: #94a3b8;
+  --pastel-lavender-soft: #ede9fe;
+  --pastel-lavender-deep: #8b5cf6;
+  --pastel-lavender-tint: #f5f3ff;
   
-  --ios-blue: #007aff;
-  --ios-blue-hover: #0062cc;
-  --ios-green: #34c759;
-  --ios-orange: #ff9500;
-  --ios-red: #ff3b30;
-  --ios-purple: #af52de;
-  --ios-teal: #30b0c7;
+  --pastel-sage-soft: #d1fae5;
+  --pastel-sage-deep: #059669;
+  --pastel-sage-tint: #f0fdf4;
+  
+  --pastel-peach-soft: #ffedd5;
+  --pastel-peach-deep: #ea580c;
+  
+  --pastel-blue-soft: #e0f2fe;
+  --pastel-blue-deep: #0284c7;
 
-  --nutri-a: #038141;
-  --nutri-b: #85bb2f;
-  --nutri-c: #fecb02;
-  --nutri-d: #ee8100;
-  --nutri-e: #e63e11;
+  /* Typography Colors */
+  --text-main: #2b2d42;
+  --text-muted: #5f6c7b;
+  --text-subtle: #94a3b8;
+  
+  --border-light: rgba(203, 192, 220, 0.25);
+  --border-focus: rgba(244, 114, 182, 0.35);
 
-  --store-lidl: #0050aa;
-  --store-biedronka: #d71822;
-  --store-kaufland: #d11218;
+  /* Store Pastels */
+  --store-lidl-bg: #e0f2fe;
+  --store-lidl-text: #0369a1;
+  
+  --store-biedronka-bg: #ffe4e6;
+  --store-biedronka-text: #e11d48;
+  
+  --store-kaufland-bg: #fae8ff;
+  --store-kaufland-text: #c026d3;
 
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 20px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
-  --shadow-lg: 0 12px 36px -4px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06);
+  /* Nutri-Score Pastel Tones */
+  --nutri-a: #10b981;
+  --nutri-b: #84cc16;
+  --nutri-c: #eab308;
+  --nutri-d: #f97316;
+  --nutri-e: #ef4444;
 
-  --radius-xl: 24px;
-  --radius-lg: 18px;
-  --radius-md: 12px;
+  /* Soft Ambient Floating Shadows */
+  --shadow-pastel-card: 0 10px 30px -4px rgba(220, 205, 235, 0.35), 0 4px 12px -2px rgba(0, 0, 0, 0.02);
+  --shadow-pastel-hover: 0 18px 40px -6px rgba(215, 195, 235, 0.45), 0 6px 16px -3px rgba(0, 0, 0, 0.03);
+  --shadow-button-pink: 0 8px 24px -4px rgba(251, 113, 133, 0.35);
+
+  --radius-full: 999px;
+  --radius-xl: 28px;
+  --radius-lg: 20px;
+  --radius-md: 14px;
   --radius-sm: 8px;
 
-  --spring-ease: cubic-bezier(0.16, 1, 0.3, 1);
-  --bounce-ease: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --spring-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --bounce-soft: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 * {
@@ -56,18 +81,47 @@
 
 body.ios-app {
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: var(--bg-page);
-  color: var(--text-primary);
-  line-height: 1.5;
+  background: linear-gradient(180deg, #fdf4f6 0%, #f6f1fa 28%, #f0fdf4 100%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  line-height: 1.55;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  position: relative;
   overflow-x: hidden;
 }
 
+/* Ambient soft background glow blobs */
+body.ios-app::before {
+  content: '';
+  position: fixed;
+  top: -100px;
+  right: -80px;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(253, 226, 228, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body.ios-app::after {
+  content: '';
+  position: fixed;
+  bottom: 50px;
+  left: -80px;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(237, 233, 254, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+
 .app-wrapper {
-  max-width: 1040px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 18px 16px 80px 16px;
+  padding: 22px 18px 90px 18px;
 }
 
 /* ============================================================
@@ -78,7 +132,7 @@ body.ios-app {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 10px 0 18px 0;
+  padding: 8px 0 20px 0;
 }
 
 .brand-container {
@@ -88,17 +142,17 @@ body.ios-app {
 }
 
 .brand-symbol {
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-md);
-  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, #ffffff 0%, #fff1f2 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--border-subtle);
-  transition: transform 0.25s var(--bounce-ease);
+  font-size: 1.7rem;
+  box-shadow: 0 8px 20px -4px rgba(251, 113, 133, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  transition: transform 0.25s var(--bounce-soft);
 }
 
 .brand-symbol:hover {
@@ -106,44 +160,44 @@ body.ios-app {
 }
 
 .brand-title {
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   font-weight: 800;
   letter-spacing: -0.6px;
-  color: #0f172a;
+  color: #1e1b2e;
 }
 
 .brand-sub {
   font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--text-secondary);
+  font-weight: 600;
+  color: var(--text-muted);
 }
 
-/* iOS Primary Action Button */
+/* Soft Rose Pastel Action Button */
 .ios-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 18px;
-  border-radius: 999px;
+  padding: 11px 22px;
+  border-radius: var(--radius-full);
   font-weight: 700;
   font-size: 0.88rem;
   cursor: pointer;
   border: none;
   outline: none;
-  transition: transform 0.18s var(--spring-ease), box-shadow 0.18s ease, background 0.18s ease;
+  transition: transform 0.18s var(--spring-soft), box-shadow 0.18s ease, filter 0.18s ease;
   user-select: none;
 }
 
 .ios-btn-primary {
-  background: var(--ios-blue);
+  background: linear-gradient(135deg, #fb7185 0%, #f43f5e 50%, #e11d48 100%);
   color: #ffffff;
-  box-shadow: 0 4px 14px rgba(0, 122, 255, 0.3);
+  box-shadow: var(--shadow-button-pink);
 }
 
 .ios-btn-primary:hover:not(:disabled) {
-  background: var(--ios-blue-hover);
-  box-shadow: 0 6px 20px rgba(0, 122, 255, 0.4);
-  transform: translateY(-1px);
+  filter: brightness(1.03);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -4px rgba(251, 113, 133, 0.45);
 }
 
 .ios-btn:active:not(:disabled) {
@@ -156,7 +210,7 @@ body.ios-app {
 }
 
 /* ============================================================
-   2. STATUS CAPSULE (iOS Inspired)
+   2. STATUS CAPSULE (Soft Glass)
    ============================================================ */
 .status-capsule {
   display: flex;
@@ -164,12 +218,14 @@ body.ios-app {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: 999px;
-  padding: 8px 18px;
-  margin-bottom: 20px;
-  box-shadow: var(--shadow-sm);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: var(--radius-full);
+  padding: 9px 20px;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 16px -2px rgba(220, 205, 235, 0.25);
   font-size: 0.82rem;
 }
 
@@ -183,66 +239,66 @@ body.ios-app {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: var(--ios-green);
-  box-shadow: 0 0 0 0 rgba(52, 199, 89, 0.5);
-  animation: pulseGreen 2s infinite;
+  background: #10b981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
+  animation: pulseGreen 2.2s infinite;
 }
 
 .pulse-indicator.syncing {
-  background: var(--ios-orange);
-  box-shadow: 0 0 0 0 rgba(255, 149, 0, 0.5);
+  background: #f59e0b;
+  box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.5);
   animation: pulseOrange 1s infinite;
 }
 
 @keyframes pulseGreen {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(52, 199, 89, 0.6); }
-  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(52, 199, 89, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(52, 199, 89, 0); }
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
 
 @keyframes pulseOrange {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 149, 0, 0.6); }
-  70% { transform: scale(1.05); box-shadow: 0 0 0 8px rgba(255, 149, 0, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 149, 0, 0); }
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.5); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 8px rgba(245, 158, 11, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
 }
 
 .capsule-text {
-  font-weight: 600;
-  color: var(--text-secondary);
+  font-weight: 700;
+  color: var(--text-main);
 }
 
 .capsule-schedule {
-  color: var(--text-tertiary);
-  font-weight: 600;
+  color: var(--text-muted);
+  font-weight: 700;
   font-size: 0.78rem;
 }
 
 /* ============================================================
-   3. SEGMENTED NAVIGATION CONTROL
+   3. SEGMENTED NAVIGATION CONTROL (Soft Lavender Pill)
    ============================================================ */
 .segmented-control {
-  position: relative;
   display: flex;
-  background: #e2e8f0;
-  padding: 4px;
-  border-radius: var(--radius-lg);
-  margin-bottom: 24px;
+  background: rgba(237, 233, 248, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 5px;
+  border-radius: var(--radius-full);
+  margin-bottom: 26px;
   user-select: none;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 10px rgba(190, 175, 215, 0.15);
 }
 
 .segment-btn {
   flex: 1;
-  position: relative;
-  z-index: 2;
-  padding: 10px 14px;
+  padding: 10px 16px;
   background: transparent;
   border: none;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   font-size: 0.88rem;
   font-weight: 700;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   cursor: pointer;
-  transition: color 0.2s ease, transform 0.15s ease;
+  transition: all 0.2s var(--spring-soft);
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -255,35 +311,35 @@ body.ios-app {
 }
 
 .segment-btn.active {
-  color: var(--text-primary);
+  color: #1e1b2e;
   background: #ffffff;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(175, 150, 205, 0.25);
 }
 
 .tab-pane {
   display: none;
-  animation: iosTabFadeIn 0.35s var(--spring-ease);
+  animation: pastelFadeIn 0.35s var(--spring-soft);
 }
 
 .tab-pane.active {
   display: block;
 }
 
-@keyframes iosTabFadeIn {
-  from { opacity: 0; transform: translateY(8px); }
+@keyframes pastelFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 /* ============================================================
-   4. HERO STRATEGY CARD (White High-End)
+   4. HERO STRATEGY CARD (Blush & Lavender Pastel Gradient)
    ============================================================ */
 .ios-hero-card {
-  background: #ffffff;
-  border: 1px solid var(--border-subtle);
+  background: linear-gradient(135deg, #ffffff 0%, #fff7f8 50%, #fbf5ff 100%);
+  border: 1px solid rgba(255, 255, 255, 0.95);
   border-radius: var(--radius-xl);
-  padding: 24px;
-  margin-bottom: 26px;
-  box-shadow: var(--shadow-md);
+  padding: 26px;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-pastel-card);
   position: relative;
   overflow: hidden;
 }
@@ -293,7 +349,7 @@ body.ios-app {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   flex-wrap: wrap;
 }
 
@@ -301,55 +357,56 @@ body.ios-app {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(52, 199, 89, 0.12);
-  color: #15803d;
+  background: #ffe4e6;
+  color: #be123c;
   font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  padding: 4px 10px;
-  border-radius: 999px;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
 }
 
 .persons-pill {
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   font-weight: 800;
-  background: #eff6ff;
-  color: #1d4ed8;
-  padding: 4px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(29, 78, 216, 0.2);
+  background: #ede9fe;
+  color: #6d28d9;
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
 }
 
 .chip-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #15803d;
+  background: #be123c;
 }
 
 .hero-headline {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 800;
   letter-spacing: -0.4px;
-  margin-bottom: 6px;
-  color: #0f172a;
+  margin-bottom: 8px;
+  color: #1e1b2e;
 }
 
 .hero-body {
   font-size: 0.95rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   line-height: 1.6;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
-/* Budget Gauge iOS Widget */
+/* Budget Widget in Soft Peach / Lilac Tone */
 .budget-widget {
-  background: #f8fafc;
-  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(230, 215, 245, 0.5);
   border-radius: var(--radius-lg);
-  padding: 16px;
-  margin-bottom: 16px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 16px -2px rgba(220, 205, 235, 0.2);
 }
 
 .budget-row {
@@ -357,20 +414,20 @@ body.ios-app {
   justify-content: space-between;
   align-items: flex-end;
   gap: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   flex-wrap: wrap;
 }
 
 .b-label {
-  font-size: 0.76rem;
-  font-weight: 700;
-  color: var(--text-tertiary);
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: var(--text-subtle);
   text-transform: uppercase;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
 }
 
 .b-value {
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   font-weight: 800;
   color: #059669;
 }
@@ -380,33 +437,33 @@ body.ios-app {
 }
 
 .b-rem {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 800;
-  color: #2563eb;
+  color: #7c3aed;
 }
 
 .budget-bar-track {
   width: 100%;
-  height: 8px;
-  background: #e2e8f0;
-  border-radius: 999px;
+  height: 10px;
+  background: #ede9fe;
+  border-radius: var(--radius-full);
   overflow: hidden;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .budget-bar-fill {
   height: 100%;
   background: linear-gradient(90deg, #10b981 0%, #059669 100%);
-  border-radius: 999px;
-  transition: width 0.6s var(--spring-ease);
+  border-radius: var(--radius-full);
+  transition: width 0.7s var(--spring-soft);
 }
 
 .budget-legend {
   display: flex;
   justify-content: space-between;
-  font-size: 0.72rem;
-  color: var(--text-tertiary);
-  font-weight: 600;
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-weight: 700;
 }
 
 .hero-badges {
@@ -417,9 +474,9 @@ body.ios-app {
 
 .quality-badge {
   font-size: 0.76rem;
-  font-weight: 700;
-  padding: 5px 12px;
-  border-radius: 999px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
 }
 
 .badge-clean {
@@ -429,52 +486,52 @@ body.ios-app {
 }
 
 .badge-nutri {
-  background: #eff6ff;
-  color: #1d4ed8;
-  border: 1px solid rgba(29, 78, 216, 0.2);
+  background: #ede9fe;
+  color: #6d28d9;
+  border: 1px solid rgba(109, 40, 217, 0.2);
 }
 
 .badge-gear {
-  background: #faf5ff;
-  color: #7e22ce;
-  border: 1px solid rgba(126, 34, 206, 0.2);
+  background: #fff1f2;
+  color: #be123c;
+  border: 1px solid rgba(190, 18, 60, 0.2);
 }
 
 /* ============================================================
-   5. MEAL CARDS GRID & CARDS FLOW
+   5. MEAL CARDS (Soft Floating Pastel)
    ============================================================ */
 .cards-flow {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+  gap: 22px;
 }
 
 .meal-card-ios {
   background: #ffffff;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(235, 225, 245, 0.6);
   border-radius: var(--radius-xl);
-  padding: 20px;
-  box-shadow: var(--shadow-md);
+  padding: 22px;
+  box-shadow: var(--shadow-pastel-card);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 16px;
-  transition: transform 0.22s var(--spring-ease), box-shadow 0.22s ease;
-  animation: iosCardSlideUp 0.45s var(--spring-ease) both;
+  transition: transform 0.22s var(--spring-soft), box-shadow 0.22s ease;
+  animation: pastelCardSlideUp 0.45s var(--spring-soft) both;
 }
 
 .meal-card-ios:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(0, 122, 255, 0.2);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-pastel-hover);
+  border-color: rgba(244, 114, 182, 0.35);
 }
 
 .meal-card-ios:active {
   transform: scale(0.985);
 }
 
-@keyframes iosCardSlideUp {
-  from { opacity: 0; transform: translateY(16px); }
+@keyframes pastelCardSlideUp {
+  from { opacity: 0; transform: translateY(18px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -490,17 +547,17 @@ body.ios-app {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 4px 10px;
-  background: #f1f5f9;
-  border-radius: var(--radius-sm);
-  color: #334155;
+  padding: 5px 12px;
+  background: #fdf2f4;
+  color: #be123c;
+  border-radius: var(--radius-full);
 }
 
 .gear-pill {
   font-size: 0.76rem;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 999px;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -509,27 +566,28 @@ body.ios-app {
 .gear-airfryer { background: #fef3c7; color: #b45309; }
 .gear-piekarnik { background: #fee2e2; color: #b91c1c; }
 .gear-patelnia  { background: #dcfce7; color: #15803d; }
-.gear-garnek    { background: #f3e8ff; color: #6b21a8; }
+.gear-garnek    { background: #ede9fe; color: #6b21a8; }
 
 .dish-heading {
-  font-size: 1.18rem;
+  font-size: 1.2rem;
   font-weight: 800;
-  color: #0f172a;
+  color: #1e1b2e;
   line-height: 1.35;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .time-row {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 4px;
+  gap: 10px;
+  margin-top: 6px;
+  flex-wrap: wrap;
 }
 
 .prep-time {
   font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--text-tertiary);
+  font-weight: 700;
+  color: var(--text-muted);
 }
 
 .cost-badge-ios {
@@ -539,24 +597,24 @@ body.ios-app {
   background: #ecfdf5;
   color: #047857;
   border: 1px solid rgba(4, 120, 87, 0.25);
-  padding: 3px 9px;
-  border-radius: 999px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
   font-size: 0.76rem;
   font-weight: 800;
 }
 
 /* ============================================================
-   6. NUTRI-SCORE BADGE (OFFICIAL EUROPEAN REPLICA)
+   6. NUTRI-SCORE BADGE
    ============================================================ */
 .nutri-score-badge {
   display: inline-flex;
   align-items: center;
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   padding: 3px 6px;
   border-radius: 6px;
   gap: 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .nutri-score-title {
@@ -590,7 +648,7 @@ body.ios-app {
 .nutri-e { background: var(--nutri-e); }
 
 /* ============================================================
-   7. INGREDIENTS LIST & FLYER THUMBNAIL IN CARDS
+   7. INGREDIENTS CLUSTERS
    ============================================================ */
 .ingredients-cluster {
   display: flex;
@@ -602,7 +660,7 @@ body.ios-app {
   font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: var(--text-tertiary);
+  color: var(--text-subtle);
   letter-spacing: 0.5px;
 }
 
@@ -611,15 +669,15 @@ body.ios-app {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  background: #f8fafc;
-  border: 1px solid var(--border-subtle);
+  background: #faf8fc;
+  border: 1px solid rgba(225, 215, 240, 0.5);
   border-radius: var(--radius-md);
-  padding: 8px 12px;
+  padding: 9px 12px;
   transition: background 0.15s ease;
 }
 
 .promo-ingredient-tile:hover {
-  background: #f1f5f9;
+  background: #f5f0fa;
 }
 
 .ingredient-info {
@@ -630,7 +688,7 @@ body.ios-app {
 .ingredient-name {
   font-size: 0.86rem;
   font-weight: 700;
-  color: #1e293b;
+  color: #2b2d42;
 }
 
 .ingredient-meta {
@@ -640,17 +698,16 @@ body.ios-app {
   margin-top: 2px;
 }
 
-/* Store Badges */
 .store-pill {
   font-size: 0.68rem;
   font-weight: 800;
-  padding: 2px 7px;
-  border-radius: 4px;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
 }
 
-.store-pill.lidl { background: #dbeafe; color: var(--store-lidl); }
-.store-pill.biedronka { background: #fee2e2; color: var(--store-biedronka); }
-.store-pill.kaufland { background: #ffe4e6; color: var(--store-kaufland); }
+.store-pill.lidl { background: var(--store-lidl-bg); color: var(--store-lidl-text); }
+.store-pill.biedronka { background: var(--store-biedronka-bg); color: var(--store-biedronka-text); }
+.store-pill.kaufland { background: var(--store-kaufland-bg); color: var(--store-kaufland-text); }
 
 .ingredient-price {
   font-size: 0.86rem;
@@ -658,26 +715,24 @@ body.ios-app {
   color: #059669;
 }
 
-/* Flyer Image Button in Ingredient */
 .flyer-thumb-btn {
   background: #ffffff;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: 4px 8px;
+  border: 1px solid rgba(220, 205, 235, 0.6);
+  border-radius: var(--radius-full);
+  padding: 4px 10px;
   font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--ios-blue);
+  font-weight: 800;
+  color: #7c3aed;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  box-shadow: var(--shadow-sm);
-  transition: all 0.18s var(--spring-ease);
+  box-shadow: 0 2px 6px rgba(124, 58, 237, 0.1);
+  transition: all 0.18s var(--spring-soft);
 }
 
 .flyer-thumb-btn:hover {
-  background: #eff6ff;
-  border-color: var(--ios-blue);
+  background: #ede9fe;
   transform: translateY(-1px);
 }
 
@@ -685,27 +740,26 @@ body.ios-app {
   transform: scale(0.95);
 }
 
-/* Pantry items */
 .pantry-row {
   font-size: 0.8rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   line-height: 1.45;
-  background: #fafafa;
+  background: #faf8fc;
   padding: 8px 12px;
   border-radius: var(--radius-md);
-  border: 1px dashed var(--border-subtle);
+  border: 1px dashed rgba(225, 215, 240, 0.8);
 }
 
 /* Accordion recipe */
 .recipe-accordion {
-  border-top: 1px solid var(--border-subtle);
+  border-top: 1px solid rgba(230, 220, 245, 0.6);
   padding-top: 10px;
 }
 
 .recipe-accordion summary {
   font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--ios-blue);
+  font-weight: 800;
+  color: #7c3aed;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -721,7 +775,7 @@ body.ios-app {
   margin-top: 10px;
   padding-left: 20px;
   font-size: 0.84rem;
-  color: #334155;
+  color: #4a5568;
 }
 
 .recipe-steps li {
@@ -733,48 +787,49 @@ body.ios-app {
    8. SOUPS SECTION
    ============================================================ */
 .soups-container {
-  margin-top: 48px;
-  padding-top: 28px;
-  border-top: 1px solid var(--border-subtle);
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(230, 215, 245, 0.7);
 }
 
 .sub-header {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 14px;
+  margin-bottom: 22px;
 }
 
 .sub-header-icon {
   font-size: 2rem;
   background: #ffffff;
-  padding: 6px 12px;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--border-subtle);
+  padding: 8px 14px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 16px rgba(220, 205, 235, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
 .sub-header h3 {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: -0.4px;
+  color: #1e1b2e;
 }
 
 .sub-header p {
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 /* ============================================================
-   9. PROMOTIONS CATALOG (DEALS WATERFALL)
+   9. PROMOTIONS CATALOG
    ============================================================ */
 .filter-sheet {
   background: #ffffff;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(230, 220, 245, 0.6);
   border-radius: var(--radius-xl);
-  padding: 16px 20px;
-  margin-bottom: 22px;
-  box-shadow: var(--shadow-sm);
+  padding: 18px 22px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-pastel-card);
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -789,8 +844,8 @@ body.ios-app {
 
 .filter-caption {
   font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--text-tertiary);
+  font-weight: 800;
+  color: var(--text-subtle);
   min-width: 70px;
 }
 
@@ -801,52 +856,53 @@ body.ios-app {
 }
 
 .pill-item {
-  padding: 6px 14px;
-  border-radius: 999px;
+  padding: 7px 16px;
+  border-radius: var(--radius-full);
   font-size: 0.82rem;
   font-weight: 700;
-  background: #f1f5f9;
+  background: #f5f0fa;
   border: 1px solid transparent;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   cursor: pointer;
-  transition: all 0.15s var(--spring-ease);
+  transition: all 0.15s var(--spring-soft);
 }
 
 .pill-item:hover {
-  background: #e2e8f0;
+  background: #ece4f5;
+  color: var(--text-main);
 }
 
 .pill-item.active {
-  background: #eff6ff;
-  color: var(--ios-blue);
-  border-color: rgba(0, 122, 255, 0.3);
-  box-shadow: 0 2px 6px rgba(0, 122, 255, 0.15);
+  background: #ede9fe;
+  color: #7c3aed;
+  border-color: rgba(124, 58, 237, 0.25);
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.15);
 }
 
 .deals-waterfall {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 16px;
+  gap: 18px;
 }
 
 .deal-item-ios {
   background: #ffffff;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(230, 220, 245, 0.6);
   border-radius: var(--radius-lg);
-  padding: 16px;
-  box-shadow: var(--shadow-sm);
+  padding: 18px;
+  box-shadow: var(--shadow-pastel-card);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 12px;
-  transition: transform 0.2s var(--spring-ease), box-shadow 0.2s ease;
-  animation: iosCardSlideUp 0.4s var(--spring-ease) both;
+  transition: transform 0.2s var(--spring-soft), box-shadow 0.2s ease;
+  animation: pastelCardSlideUp 0.4s var(--spring-soft) both;
 }
 
 .deal-item-ios:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-pastel-hover);
+  border-color: rgba(244, 114, 182, 0.35);
 }
 
 .deal-header-row {
@@ -857,9 +913,9 @@ body.ios-app {
 }
 
 .deal-title {
-  font-size: 0.98rem;
+  font-size: 1rem;
   font-weight: 800;
-  color: #0f172a;
+  color: #1e1b2e;
   line-height: 1.35;
 }
 
@@ -868,14 +924,14 @@ body.ios-app {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .clean-label-pill {
   font-size: 0.72rem;
   font-weight: 800;
-  padding: 3px 8px;
-  border-radius: 999px;
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -886,20 +942,21 @@ body.ios-app {
 
 .clean-desc {
   font-size: 0.75rem;
-  color: var(--text-tertiary);
-  margin-top: 2px;
+  color: var(--text-subtle);
+  margin-top: 4px;
+  line-height: 1.4;
 }
 
 .deal-footer-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #f1f5f9;
+  border-top: 1px solid #f8fafc;
   padding-top: 10px;
 }
 
 .deal-price-value {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 800;
   color: #059669;
 }
@@ -908,32 +965,33 @@ body.ios-app {
    10. SHOPPING LIST
    ============================================================ */
 .shopping-banner {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .shopping-banner h2 {
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   font-weight: 800;
   letter-spacing: -0.4px;
+  color: #1e1b2e;
 }
 
 .shopping-banner p {
   font-size: 0.86rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .shopping-layout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 18px;
+  gap: 20px;
 }
 
 .shopping-store-column {
   background: #ffffff;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(230, 220, 245, 0.6);
   border-radius: var(--radius-xl);
-  padding: 18px;
-  box-shadow: var(--shadow-sm);
+  padding: 20px;
+  box-shadow: var(--shadow-pastel-card);
 }
 
 .column-head {
@@ -941,13 +999,14 @@ body.ios-app {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 12px;
-  margin-bottom: 12px;
-  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 14px;
+  border-bottom: 1px solid rgba(230, 220, 245, 0.6);
 }
 
 .column-name {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 800;
+  color: #1e1b2e;
 }
 
 .shopping-checkbox-row {
@@ -955,28 +1014,28 @@ body.ios-app {
   align-items: center;
   gap: 12px;
   padding: 10px 8px;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   transition: background 0.15s ease;
   cursor: pointer;
 }
 
 .shopping-checkbox-row:hover {
-  background: #f8fafc;
+  background: #fdf4f6;
 }
 
 .shopping-checkbox-row input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  accent-color: var(--ios-blue);
+  accent-color: #fb7185;
   cursor: pointer;
 }
 
 .shopping-checkbox-row span {
   font-size: 0.92rem;
-  font-weight: 600;
-  color: #1e293b;
-  transition: color 0.15s ease, text-decoration 0.15s ease;
+  font-weight: 700;
+  color: #2b2d42;
+  transition: all 0.15s ease;
 }
 
 .shopping-checkbox-row.checked span {
@@ -985,7 +1044,7 @@ body.ios-app {
 }
 
 /* ============================================================
-   11. iOS LIGHTBOX MODAL WITH ZOOM
+   11. LIGHTBOX MODAL WITH ZOOM
    ============================================================ */
 .lightbox-modal {
   position: fixed;
@@ -1001,7 +1060,7 @@ body.ios-app {
 .lightbox-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(15, 23, 42, 0.65);
+  background: rgba(30, 27, 46, 0.6);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
 }
@@ -1014,14 +1073,14 @@ body.ios-app {
   width: 100%;
   max-width: 860px;
   max-height: 90vh;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  animation: lightboxPop 0.3s var(--bounce-ease);
+  animation: pastelModalPop 0.3s var(--bounce-soft);
 }
 
-@keyframes lightboxPop {
+@keyframes pastelModalPop {
   from { opacity: 0; transform: scale(0.92); }
   to { opacity: 1; transform: scale(1); }
 }
@@ -1030,20 +1089,20 @@ body.ios-app {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 20px;
-  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 22px;
+  border-bottom: 1px solid rgba(230, 220, 245, 0.6);
   background: #ffffff;
 }
 
 .lightbox-title-box h4 {
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   font-weight: 800;
-  color: #0f172a;
+  color: #1e1b2e;
 }
 
 .lightbox-title-box span {
   font-size: 0.74rem;
-  color: var(--text-tertiary);
+  color: var(--text-muted);
 }
 
 .lightbox-controls {
@@ -1053,32 +1112,37 @@ body.ios-app {
 }
 
 .zoom-btn, .close-btn {
-  background: #f1f5f9;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  padding: 6px 12px;
+  background: #f5f0fa;
+  border: 1px solid rgba(220, 205, 235, 0.6);
+  border-radius: var(--radius-full);
+  padding: 6px 14px;
   font-size: 0.88rem;
   font-weight: 800;
   cursor: pointer;
-  color: var(--text-primary);
+  color: #1e1b2e;
   transition: all 0.15s ease;
 }
 
-.zoom-btn:hover, .close-btn:hover {
-  background: #e2e8f0;
+.zoom-btn:hover {
+  background: #ede9fe;
+  color: #7c3aed;
 }
 
 .close-btn {
-  background: #fee2e2;
-  color: #dc2626;
-  border-color: rgba(220, 38, 38, 0.2);
+  background: #ffe4e6;
+  color: #e11d48;
+  border-color: rgba(225, 29, 72, 0.2);
+}
+
+.close-btn:hover {
+  background: #fecdd3;
 }
 
 .lightbox-viewport {
   flex: 1;
   overflow: auto;
   padding: 20px;
-  background: #f8fafc;
+  background: #faf8fc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1091,12 +1155,12 @@ body.ios-app {
   max-height: 70vh;
   object-fit: contain;
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
-  transition: transform 0.25s var(--spring-ease);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s var(--spring-soft);
 }
 
 /* ============================================================
-   12. LOADING & SPINNERS
+   12. LOADING SPINNER
    ============================================================ */
 .loading-container {
   text-align: center;
@@ -1104,12 +1168,12 @@ body.ios-app {
 }
 
 .ios-spinner {
-  width: 38px;
-  height: 38px;
-  border: 3px solid rgba(0, 122, 255, 0.15);
-  border-top-color: var(--ios-blue);
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(251, 113, 133, 0.2);
+  border-top-color: #fb7185;
   border-radius: 50%;
-  animation: spin 0.75s linear infinite;
+  animation: spin 0.8s linear infinite;
   margin: 0 auto 16px auto;
 }
 
@@ -1118,9 +1182,9 @@ body.ios-app {
 }
 
 .loading-label {
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: var(--text-secondary);
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--text-muted);
 }
 
 .hidden {
@@ -1131,9 +1195,9 @@ body.ios-app {
    13. FOOTER
    ============================================================ */
 .app-footer {
-  margin-top: 50px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border-subtle);
+  margin-top: 55px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(230, 220, 245, 0.6);
   text-align: center;
 }
 
@@ -1147,15 +1211,17 @@ body.ios-app {
 
 .f-pill {
   font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--text-secondary);
+  font-weight: 800;
+  color: var(--text-muted);
   background: #ffffff;
-  padding: 4px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--border-subtle);
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(230, 220, 245, 0.6);
+  box-shadow: 0 2px 8px rgba(220, 205, 235, 0.15);
 }
 
 .footer-legal {
   font-size: 0.78rem;
-  color: var(--text-tertiary);
+  font-weight: 600;
+  color: var(--text-subtle);
 }

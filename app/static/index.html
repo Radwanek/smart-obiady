@@ -133,10 +133,18 @@
         <p class="assistant-sub">Napisz, czego potrzebujesz – asystent przeszuka gazetki Lidla, Biedronki i Kauflandu, sprawdzi aktualne daty ważności, czysty skład i podpowie najtańszą opcję dla dwojga!</p>
         
         <div class="quick-prompts-bar">
-          <button class="quick-prompt-chip" onclick="askQuickPrompt('Gdzie kupię najtańsze mięso na obiad dla dwojga?')">🥩 Gdzie najtańsze mięso?</button>
-          <button class="quick-prompt-chip" onclick="askQuickPrompt('Czy jest w promocji łosoś albo świeża ryba?')">🐟 Czy jest łosoś lub ryba?</button>
-          <button class="quick-prompt-chip" onclick="askQuickPrompt('Tani nabiał z czystym składem (skyr, twaróg, sery)')">🧀 Tani czysty nabiał</button>
-          <button class="quick-prompt-chip" onclick="askQuickPrompt('Jakie są tanie warzywa na obiad do Airfryera?')">🥦 Warzywa do Airfryera</button>
+          <button class="quick-prompt-chip chip-pink" onclick="askQuickPrompt('Gdzie kupię najtańsze mięso na obiad dla dwojga?')">
+            <span class="chip-emoji">🥩</span> Gdzie najtańsze mięso?
+          </button>
+          <button class="quick-prompt-chip chip-blue" onclick="askQuickPrompt('Czy jest w promocji łosoś albo świeża ryba?')">
+            <span class="chip-emoji">🐟</span> Czy jest łosoś lub ryba?
+          </button>
+          <button class="quick-prompt-chip chip-purple" onclick="askQuickPrompt('Tani nabiał z czystym składem (skyr, twaróg, sery)')">
+            <span class="chip-emoji">🧀</span> Tani czysty nabiał
+          </button>
+          <button class="quick-prompt-chip chip-green" onclick="askQuickPrompt('Jakie są tanie warzywa na obiad do Airfryera?')">
+            <span class="chip-emoji">🥦</span> Warzywa do Airfryera
+          </button>
         </div>
       </div>
 
@@ -151,8 +159,11 @@
         </div>
       </div>
 
-      <!-- Chat Input Field -->
+      <!-- Chat Input Field (Pinterest Habit Tracker iOS Style) -->
       <form class="assistant-input-bar" id="assistantForm" onsubmit="handleAssistantSubmit(event)">
+        <div class="input-spark-badge" title="AI Asystent Promocji">
+          <span class="spark-emoji">✨</span>
+        </div>
         <input 
           type="text" 
           id="assistantInput" 
@@ -160,8 +171,13 @@
           placeholder="Zapytaj asystenta (np. gdzie najtaniej kupię kurczaka?)..." 
           autocomplete="off"
         >
-        <button type="submit" id="assistantSendBtn" class="assistant-send-btn" title="Wyślij">
-          <span id="sendIcon">➤</span>
+        <button type="submit" id="assistantSendBtn" class="assistant-send-btn" title="Wyślij zapytanie">
+          <span id="sendIcon" class="send-icon-wrap">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 2L11 13"></path>
+              <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+            </svg>
+          </span>
           <div class="ios-spinner-sm hidden" id="sendSpinner"></div>
         </button>
       </form>

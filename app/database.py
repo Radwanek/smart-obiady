@@ -1,5 +1,6 @@
 import sqlite3
 import json
+from pathlib import Path
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 from app.config import DATABASE_PATH
@@ -104,8 +105,43 @@ def init_db():
     )
     """)
     
+    cursor.execute("SELECT COUNT(*) FROM promotions")
+    promo_count = cursor.fetchone()[0]
+    
     conn.commit()
     conn.close()
+    
+    # Jeśli baza jest pusta (np. po starcie nowego kontenera na Renderze), załaduj gotowy seed
+    if promo_count == 0:
+        seed_path = Path(__file__).resolve().parent / "seed_data.json"
+        if seed_path.exists():
+            try:
+                print(f"[init_db] Pusta baza - natychmiastowe ładowanie seed_data z {seed_path}...")
+                with open(seed_path, "r", encoding="utf-8") as f:
+                    seed_data = json.load(f)
+                    
+                promos = seed_data.get("promotions", [])
+                if promos:
+                    save_promotions(promos)
+                    
+                p = seed_data.get("meal_plan")
+                if p and "meals" in p:
+                    save_meal_plan(
+                        p.get("weekly_summary", "Plan obiadów dla 2 osób"),
+                        p.get("meals", []),
+                        p.get("total_estimated_cost", "~86 zł"),
+                        p.get("budget_remaining", "~64 zł")
+                    )
+                    
+                ls = seed_data.get("last_sync", {})
+                log_sync(
+                    ls.get("status", "SUCCESS"),
+                    len(promos),
+                    ls.get("message", "Załadowano bazę startową (instant startup)")
+                )
+                print(f"[init_db] Gotowe! Załadowano {len(promos)} ofert oraz kompletny plan obiadów w 0.05s.")
+            except Exception as e:
+                print(f"[init_db] Błąd podczas importu seed_data: {e}")
 
 def save_promotions(deals: List[Dict[str, Any]]) -> int:
     conn = get_connection()

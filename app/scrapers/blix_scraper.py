@@ -2,6 +2,7 @@ import re
 import httpx
 from bs4 import BeautifulSoup
 from typing import List, Dict, Any
+from concurrent.futures import ThreadPoolExecutor
 
 STORES = {
     "Lidl": "https://blix.pl/sklep/lidl",
@@ -115,104 +116,125 @@ def analyze_nutrition_and_clean_label(name: str, category: str) -> Dict[str, str
         "clean_label_desc": "Produkt o dobrym profilu odżywczym"
     }
 
-def scrape_store_promotions(store_name: str, store_url: str, client: httpx.Client) -> List[Dict[str, Any]]:
+def scrape_single_flyer(flyer_url: str, store_name: str, headers: dict) -> List[Dict[str, Any]]:
     results = []
     seen = set()
-    
     try:
-        r = client.get(store_url, timeout=12.0)
-        if r.status_code != 200:
-            return []
+        with httpx.Client(headers=headers, follow_redirects=True, timeout=10.0) as client:
+            fr = client.get(flyer_url)
+            if fr.status_code != 200:
+                return []
+            fsoup = BeautifulSoup(fr.text, 'html.parser')
             
-        soup = BeautifulSoup(r.text, 'html.parser')
-        
-        # Znajdź gazetki
-        flyer_links = []
-        for a in soup.find_all('a', href=True):
-            href = a['href']
-            if f"/sklep/{store_name.lower()}/gazetka/" in href:
-                if not href.startswith("http"):
-                    href = "https://blix.pl" + href
-                flyer_links.append(href)
-                
-        unique_flyers = list(dict.fromkeys(flyer_links))[:2]
-        
-        for flyer_url in unique_flyers:
-            try:
-                fr = client.get(flyer_url, timeout=12.0)
-                if fr.status_code != 200:
+            # Zbuduj mapę stron do zdjęć wysokiej rozdzielczości
+            page_images = {}
+            for img in fsoup.find_all('img'):
+                src = img.get('src') or img.get('data-src') or ''
+                alt = img.get('alt', '')
+                if 'imgproxy.blix.pl' in src and 'leaflet' in src:
+                    page_match = re.search(r'strona\s+(\d+)', alt, re.IGNORECASE)
+                    if page_match:
+                        page_images[page_match.group(1)] = src
+                    elif "1" not in page_images:
+                        page_images["1"] = src
+                        
+            offers = fsoup.select('[data-name]')
+            for o in offers:
+                name = o.get('data-name', '').strip()
+                if not name or name in seen:
                     continue
-                fsoup = BeautifulSoup(fr.text, 'html.parser')
-                
-                # Zbuduj mapę stron do zdjęć wysokiej rozdzielczości
-                page_images = {}
-                for img in fsoup.find_all('img'):
-                    src = img.get('src') or img.get('data-src') or ''
-                    alt = img.get('alt', '')
-                    if 'imgproxy.blix.pl' in src and 'leaflet' in src:
-                        # Szukaj numeru strony w alt
-                        page_match = re.search(r'strona\s+(\d+)', alt, re.IGNORECASE)
-                        if page_match:
-                            p_num = page_match.group(1)
-                            page_images[p_num] = src
-                        elif "1" not in page_images:
-                            page_images["1"] = src
-                            
-                offers = fsoup.select('[data-name]')
-                
-                for o in offers:
-                    name = o.get('data-name', '').strip()
-                    if not name or name in seen:
-                        continue
-                        
-                    category = classify_item(name)
-                    if not category:
-                        continue
-                        
-                    seen.add(name)
-                    price_val = o.get('data-price')
-                    if price_val and price_val.isdigit() and int(price_val) > 0:
-                        price = f"{int(price_val)/100:.2f} zł"
-                    else:
-                        price = "Supercena w gazetce"
-                        
-                    page_num = str(o.get('data-page-number', '1'))
-                    image_url = page_images.get(page_num) or page_images.get('1') or ''
                     
-                    analysis = analyze_nutrition_and_clean_label(name, category)
+                category = classify_item(name)
+                if not category:
+                    continue
                     
-                    results.append({
-                        "store": store_name,
-                        "name": name,
-                        "price": price,
-                        "category": category,
-                        "image_url": image_url,
-                        "nutri_score": analysis["nutri_score"],
-                        "clean_label": analysis["clean_label"],
-                        "clean_label_desc": analysis["clean_label_desc"],
-                        "date_start": o.get('data-date-start', ''),
-                        "date_end": o.get('data-date-end', ''),
-                        "leaflet_id": o.get('data-leaflet-id', ''),
-                        "page_number": page_num
-                    })
-            except Exception as fe:
-                print(f"Error scraping flyer {flyer_url}: {fe}")
+                seen.add(name)
+                price_val = o.get('data-price')
+                if price_val and price_val.isdigit() and int(price_val) > 0:
+                    price = f"{int(price_val)/100:.2f} zł"
+                else:
+                    price = "Supercena w gazetce"
+                    
+                page_num = str(o.get('data-page-number', '1'))
+                image_url = page_images.get(page_num) or page_images.get('1') or ''
+                analysis = analyze_nutrition_and_clean_label(name, category)
                 
-    except Exception as e:
-        print(f"Error scraping {store_name}: {e}")
+                results.append({
+                    "store": store_name,
+                    "name": name,
+                    "price": price,
+                    "category": category,
+                    "image_url": image_url,
+                    "nutri_score": analysis["nutri_score"],
+                    "clean_label": analysis["clean_label"],
+                    "clean_label_desc": analysis["clean_label_desc"],
+                    "date_start": o.get('data-date-start', ''),
+                    "date_end": o.get('data-date-end', ''),
+                    "leaflet_id": o.get('data-leaflet-id', ''),
+                    "page_number": page_num
+                })
+    except Exception as fe:
+        print(f"Error scraping flyer {flyer_url}: {fe}")
         
     return results
 
+def scrape_store_promotions(store_name: str, store_url: str, headers: dict) -> List[Dict[str, Any]]:
+    try:
+        with httpx.Client(headers=headers, follow_redirects=True, timeout=10.0) as client:
+            r = client.get(store_url)
+            if r.status_code != 200:
+                return []
+                
+            soup = BeautifulSoup(r.text, 'html.parser')
+            flyer_links = []
+            for a in soup.find_all('a', href=True):
+                href = a['href']
+                if f"/sklep/{store_name.lower()}/gazetka/" in href:
+                    if not href.startswith("http"):
+                        href = "https://blix.pl" + href
+                    flyer_links.append(href)
+                    
+            unique_flyers = list(dict.fromkeys(flyer_links))[:2]
+
+        # Równoległe pobieranie gazetek danego sklepu
+        results = []
+        with ThreadPoolExecutor(max_workers=2) as executor:
+            flyer_results = executor.map(
+                lambda url: scrape_single_flyer(url, store_name, headers),
+                unique_flyers
+            )
+            for sublist in flyer_results:
+                results.extend(sublist)
+                
+        return results
+    except Exception as e:
+        print(f"Error scraping {store_name}: {e}")
+        return []
+
 def scrape_all_promotions() -> List[Dict[str, Any]]:
-    all_deals = []
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
         'Accept-Language': 'pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7'
     }
     
-    with httpx.Client(headers=headers, follow_redirects=True) as client:
-        for store_name, url in STORES.items():
-            deals = scrape_store_promotions(store_name, url, client)
-            all_deals.extend(deals)
-            
+    all_deals = []
+    seen = set()
+    
+    # Równoległe pobieranie wszystkich sklepów (Lidl, Biedronka, Kaufland)
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        store_futures = [
+            executor.submit(scrape_store_promotions, store_name, url, headers)
+            for store_name, url in STORES.items()
+        ]
+        for f in store_futures:
+            try:
+                deals = f.result()
+                for d in deals:
+                    key = (d["store"], d["name"])
+                    if key not in seen:
+                        seen.add(key)
+                        all_deals.append(d)
+            except Exception as e:
+                print(f"Błąd wątku sklepu: {e}")
+                
     return all_deals

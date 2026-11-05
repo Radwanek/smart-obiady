@@ -1,6 +1,8 @@
 let activeTab = 'meals';
 let filterStore = 'Wszystkie';
 let filterCategory = 'Wszystkie';
+let filterSearch = '';
+let dealsSearchTimer = null;
 let activePlanData = null;
 let pollTimer = null;
 let currentZoom = 1.0;
@@ -259,14 +261,22 @@ function createMealCardHtml(meal) {
    ============================================================ */
 async function loadPromotions() {
   const container = document.getElementById('dealsContainer');
+  const countLabel = document.getElementById('dealsCountLabel');
   
   try {
     const params = new URLSearchParams();
     if (filterStore !== 'Wszystkie') params.append('store', filterStore);
     if (filterCategory !== 'Wszystkie') params.append('category', filterCategory);
+    if (filterSearch && filterSearch.trim()) params.append('search', filterSearch.trim());
+    params.append('limit', '250');
     
     const res = await fetch(`/api/promotions?${params.toString()}`);
     const data = await res.json();
+    
+    if (countLabel) {
+      const cnt = data.count || (data.promotions ? data.promotions.length : 0);
+      countLabel.innerHTML = `Znaleziono: <strong>${cnt}</strong> ${filterSearch ? `dla „${escapeHtml(filterSearch)}”` : 'aktualnych okazji'}`;
+    }
     
     if (data.promotions && data.promotions.length > 0) {
       container.innerHTML = data.promotions.map(d => {
@@ -290,6 +300,15 @@ async function loadPromotions() {
           </button>
         ` : '';
 
+        const tagsList = d.tags || [];
+        const tagsHtml = tagsList.length > 0 ? `
+          <div class="deal-tags-row">
+            ${tagsList.slice(0, 3).map(t => `
+              <span class="deal-tag-pill" onclick="searchTag('${escapeHtml(t)}', event)" title="Kliknij, aby wyszukać #${escapeHtml(t)}">#${escapeHtml(t)}</span>
+            `).join('')}
+          </div>
+        ` : '';
+
         return `
           <div class="deal-item-ios">
             <div>
@@ -305,6 +324,7 @@ async function loadPromotions() {
                 ${appBadge}
                 ${imgBtn}
               </div>
+              ${tagsHtml}
               ${d.clean_label_desc ? `<p class="clean-desc">${escapeHtml(d.clean_label_desc)}</p>` : ''}
             </div>
 
@@ -317,8 +337,10 @@ async function loadPromotions() {
       }).join('');
     } else {
       container.innerHTML = `
-        <div style="grid-column: 1/-1; text-align: center; padding: 48px; background:#fff; border-radius:24px; color:var(--text-secondary)">
-          Brak promocji spełniających wybrane kryteria.
+        <div style="grid-column: 1/-1; text-align: center; padding: 48px; background:#fff; border-radius:24px; color:var(--text-secondary); border: 1px solid var(--border-soft);">
+          <p style="font-size:1.15rem; font-weight:700; margin-bottom:8px; color:#1e1b2e;">Brak promocji spełniających kryteria</p>
+          <p style="color:var(--text-muted); margin-bottom:16px;">Spróbuj wpisać inne słowo kluczowe (np. <em>chipsy</em>, <em>kurczak</em>, <em>owoce</em>, <em>truskawki</em>, <em>napoje</em>) lub zresetuj filtry.</p>
+          <button class="ios-btn ios-btn-secondary" onclick="clearDealsSearch()">Resetuj wyszukiwanie</button>
         </div>
       `;
     }
@@ -327,11 +349,79 @@ async function loadPromotions() {
   }
 }
 
+function handleDealsSearchInput(val) {
+  filterSearch = val;
+  const clearBtn = document.getElementById('dealsSearchClear');
+  if (clearBtn) {
+    clearBtn.classList.toggle('hidden', !val || val.length === 0);
+  }
+  
+  if (dealsSearchTimer) clearTimeout(dealsSearchTimer);
+  dealsSearchTimer = setTimeout(() => {
+    loadPromotions();
+  }, 250);
+}
+
+function clearDealsSearch() {
+  filterSearch = '';
+  const input = document.getElementById('dealsSearchInput');
+  if (input) input.value = '';
+  const clearBtn = document.getElementById('dealsSearchClear');
+  if (clearBtn) clearBtn.classList.add('hidden');
+  
+  document.querySelectorAll('#quickTagsBar .keyword-chip').forEach(b => {
+    b.classList.toggle('active', b.innerText.includes('Wszystkie'));
+  });
+  loadPromotions();
+}
+
+function filterByKeyword(keyword, btnElement) {
+  document.querySelectorAll('#quickTagsBar .keyword-chip').forEach(b => b.classList.remove('active'));
+  if (btnElement) btnElement.classList.add('active');
+  
+  const input = document.getElementById('dealsSearchInput');
+  const clearBtn = document.getElementById('dealsSearchClear');
+  
+  if (keyword === 'Wszystkie') {
+    filterSearch = '';
+    if (input) input.value = '';
+    if (clearBtn) clearBtn.classList.add('hidden');
+  } else {
+    filterSearch = keyword;
+    if (input) input.value = keyword;
+    if (clearBtn) clearBtn.classList.remove('hidden');
+  }
+  
+  loadPromotions();
+}
+
+function searchTag(tag, event) {
+  if (event) event.stopPropagation();
+  const input = document.getElementById('dealsSearchInput');
+  const clearBtn = document.getElementById('dealsSearchClear');
+  
+  filterSearch = tag;
+  if (input) {
+    input.value = tag;
+    input.focus();
+  }
+  if (clearBtn) clearBtn.classList.remove('hidden');
+  
+  document.querySelectorAll('#quickTagsBar .keyword-chip').forEach(b => {
+    b.classList.toggle('active', b.innerText.toLowerCase().includes(tag.toLowerCase()));
+  });
+  
+  loadPromotions();
+  
+  const searchWrap = document.querySelector('.deals-search-wrapper');
+  if (searchWrap) searchWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 function setFilter(type, value) {
   if (type === 'store') {
     filterStore = value;
     document.querySelectorAll('#storeFilters .pill-item').forEach(b => {
-      b.classList.toggle('active', b.innerText === value);
+      b.classList.toggle('active', b.innerText.includes(value));
     });
   } else if (type === 'category') {
     filterCategory = value;

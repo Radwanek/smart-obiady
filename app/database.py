@@ -41,7 +41,8 @@ def init_db():
         ("nutri_score", "TEXT"),
         ("clean_label", "TEXT"),
         ("clean_label_desc", "TEXT"),
-        ("page_number", "TEXT")
+        ("page_number", "TEXT"),
+        ("tags", "TEXT")
     ]:
         if col not in existing_cols:
             cursor.execute(f"ALTER TABLE promotions ADD COLUMN {col} {col_type}")
@@ -151,15 +152,18 @@ def save_promotions(deals: List[Dict[str, Any]]) -> int:
     
     for d in deals:
         try:
+            tags_val = d.get("tags_str") or (", ".join(d.get("tags", [])) if isinstance(d.get("tags"), list) else str(d.get("tags", "")))
             cursor.execute("""
             INSERT INTO promotions (
-                store, name, price, category, image_url, nutri_score, 
+                store, name, price, category, tags, image_url, nutri_score, 
                 clean_label, clean_label_desc, date_start, date_end, 
                 leaflet_id, page_number, updated_at
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(store, name, date_start) DO UPDATE SET
                 price=excluded.price,
+                category=excluded.category,
+                tags=excluded.tags,
                 image_url=excluded.image_url,
                 nutri_score=excluded.nutri_score,
                 clean_label=excluded.clean_label,
@@ -171,6 +175,7 @@ def save_promotions(deals: List[Dict[str, Any]]) -> int:
                 d.get("name"),
                 d.get("price"),
                 d.get("category"),
+                tags_val,
                 d.get("image_url"),
                 d.get("nutri_score"),
                 d.get("clean_label"),
@@ -269,9 +274,10 @@ def check_app_deal(name: str, store: str) -> Dict[str, Any]:
     return {"is_app_deal": is_app, "app_badge": badge}
 
 def get_recent_promotions(
-    limit: int = 80, 
+    limit: int = 100, 
     store: Optional[str] = None, 
     category: Optional[str] = None,
+    search: Optional[str] = None,
     only_active: bool = True
 ) -> List[Dict[str, Any]]:
     conn = get_connection()
@@ -286,8 +292,13 @@ def get_recent_promotions(
     if category and category.lower() != "wszystkie":
         query += " AND LOWER(category) = LOWER(?)"
         params.append(category)
+    if search and search.strip():
+        search_terms = [t.strip().lower() for t in search.strip().split() if t.strip()]
+        for term in search_terms:
+            query += " AND (LOWER(name) LIKE ? OR LOWER(category) LIKE ? OR LOWER(COALESCE(tags, '')) LIKE ?)"
+            p = f"%{term}%"
+            params.extend([p, p, p])
         
-    # Pobierz nieco więcej, aby po odfiltrowaniu przeterminowanych zachować żądany limit
     fetch_limit = limit * 2 if only_active else limit
     query += " ORDER BY updated_at DESC LIMIT ?"
     params.append(fetch_limit)
@@ -308,6 +319,9 @@ def get_recent_promotions(
         d["is_app_deal"] = app_info["is_app_deal"]
         d["app_badge"] = app_info["app_badge"]
         
+        tags_raw = d.get("tags") or ""
+        d["tags"] = [t.strip() for t in tags_raw.split(",") if t.strip()] if isinstance(tags_raw, str) else (tags_raw or [])
+        
         if only_active and not date_info["is_active"]:
             continue
             
@@ -322,7 +336,6 @@ def search_active_promotions(query: str, limit: int = 30) -> List[Dict[str, Any]
     cursor = conn.cursor()
     
     terms = [t.strip().lower() for t in query.split() if len(t.strip()) > 1]
-    # Filtrujemy popularne słówka pomocnicze
     stopwords = {"czy", "jest", "gdzie", "jak", "dla", "jaka", "jaki", "tani", "tanie", "kupic", "kupię", "polecasz"}
     meaningful_terms = [t for t in terms if t not in stopwords]
     if not meaningful_terms:
@@ -335,9 +348,9 @@ def search_active_promotions(query: str, limit: int = 30) -> List[Dict[str, Any]
         clauses = []
         params = []
         for term in meaningful_terms:
-            clauses.append("(LOWER(name) LIKE ? OR LOWER(category) LIKE ? OR LOWER(store) LIKE ?)")
+            clauses.append("(LOWER(name) LIKE ? OR LOWER(category) LIKE ? OR LOWER(COALESCE(tags, '')) LIKE ? OR LOWER(store) LIKE ?)")
             p = f"%{term}%"
-            params.extend([p, p, p])
+            params.extend([p, p, p, p])
         sql = f"SELECT * FROM promotions WHERE {' OR '.join(clauses)} ORDER BY updated_at DESC LIMIT ?"
         params.append(limit * 3)
         cursor.execute(sql, params)
@@ -357,6 +370,8 @@ def search_active_promotions(query: str, limit: int = 30) -> List[Dict[str, Any]
         d["is_active"] = True
         d["is_app_deal"] = app_info["is_app_deal"]
         d["app_badge"] = app_info["app_badge"]
+        tags_raw = d.get("tags") or ""
+        d["tags"] = [t.strip() for t in tags_raw.split(",") if t.strip()] if isinstance(tags_raw, str) else (tags_raw or [])
         results.append(d)
         if len(results) >= limit:
             break

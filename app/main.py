@@ -56,10 +56,11 @@ def get_status():
 @app.get("/api/promotions")
 def list_promotions(
     store: Optional[str] = Query(None, description="Lidl | Biedronka | Kaufland | Wszystkie"),
-    category: Optional[str] = Query(None, description="Mięso i ryby | Nabiał i sery | Warzywa i baza | Wszystkie"),
-    limit: int = 80
+    category: Optional[str] = Query(None, description="Mięso i ryby | Nabiał i sery | Warzywa i owoce | Przekąski i słodycze | Napoje | Wszystkie"),
+    search: Optional[str] = Query(None, description="Wyszukiwanie po nazwie lub słowie kluczowym, np. chipsy, truskawki, kurczak"),
+    limit: int = 150
 ):
-    deals = get_recent_promotions(limit=limit, store=store, category=category)
+    deals = get_recent_promotions(limit=limit, store=store, category=category, search=search)
     return {"count": len(deals), "promotions": deals}
 
 @app.get("/api/meal-plan")

@@ -183,16 +183,44 @@
       </form>
     </section>
 
-    <!-- TAB 3: PROMOTIONS CATALOG -->
+    <!-- TAB 3: PROMOTIONS CATALOG WITH SEARCH & TAGS -->
     <section id="tab-deals" class="tab-pane">
+      <!-- Search & Smart Tags Header -->
+      <div class="deals-search-wrapper">
+        <div class="deals-search-bar">
+          <div class="search-icon-pill">🔍</div>
+          <input 
+            type="text" 
+            id="dealsSearchInput" 
+            class="deals-search-input" 
+            placeholder="Szukaj: chipsy, truskawki, kurczak, napoje, masło, pringles..." 
+            oninput="handleDealsSearchInput(this.value)"
+            autocomplete="off"
+          >
+          <button id="dealsSearchClear" class="deals-search-clear hidden" onclick="clearDealsSearch()" title="Wyczyść wyszukiwanie">✕</button>
+        </div>
+
+        <!-- Quick Keyword Chips -->
+        <div class="quick-tags-scroll" id="quickTagsBar">
+          <button class="keyword-chip active" onclick="filterByKeyword('Wszystkie', this)">✨ Wszystkie</button>
+          <button class="keyword-chip" onclick="filterByKeyword('chipsy', this)">🍿 Chipsy</button>
+          <button class="keyword-chip" onclick="filterByKeyword('truskawk', this)">🍓 Truskawki</button>
+          <button class="keyword-chip" onclick="filterByKeyword('owoce', this)">🍎 Owoce</button>
+          <button class="keyword-chip" onclick="filterByKeyword('napoje', this)">🥤 Napoje</button>
+          <button class="keyword-chip" onclick="filterByKeyword('kurczak', this)">🍗 Kurczak</button>
+          <button class="keyword-chip" onclick="filterByKeyword('nabiał', this)">🧀 Nabiał</button>
+          <button class="keyword-chip" onclick="filterByKeyword('czekolad', this)">🍫 Słodycze</button>
+        </div>
+      </div>
+
       <div class="filter-sheet">
         <div class="filter-row">
           <span class="filter-caption">Market:</span>
           <div class="pill-bar" id="storeFilters">
             <button class="pill-item active" onclick="setFilter('store', 'Wszystkie')">Wszystkie</button>
-            <button class="pill-item" onclick="setFilter('store', 'Lidl')">Lidl</button>
-            <button class="pill-item" onclick="setFilter('store', 'Biedronka')">Biedronka</button>
-            <button class="pill-item" onclick="setFilter('store', 'Kaufland')">Kaufland</button>
+            <button class="pill-item" onclick="setFilter('store', 'Lidl')">🔵 Lidl</button>
+            <button class="pill-item" onclick="setFilter('store', 'Biedronka')">🟡 Biedronka</button>
+            <button class="pill-item" onclick="setFilter('store', 'Kaufland')">🔴 Kaufland</button>
           </div>
         </div>
         <div class="filter-row">
@@ -201,9 +229,16 @@
             <button class="pill-item active" onclick="setFilter('category', 'Wszystkie')">Wszystkie</button>
             <button class="pill-item" onclick="setFilter('category', 'Mięso i ryby')">🥩 Mięso i ryby</button>
             <button class="pill-item" onclick="setFilter('category', 'Nabiał i sery')">🧀 Nabiał i sery</button>
-            <button class="pill-item" onclick="setFilter('category', 'Warzywa i baza')">🥦 Warzywa</button>
+            <button class="pill-item" onclick="setFilter('category', 'Warzywa i owoce')">🍓 Warzywa i owoce</button>
+            <button class="pill-item" onclick="setFilter('category', 'Przekąski i słodycze')">🍿 Przekąski</button>
+            <button class="pill-item" onclick="setFilter('category', 'Napoje')">🥤 Napoje</button>
           </div>
         </div>
+      </div>
+
+      <!-- Deals Counter & Status -->
+      <div class="deals-meta-info">
+        <span id="dealsCountLabel"></span>
       </div>
 
       <div id="dealsContainer" class="deals-waterfall"></div>

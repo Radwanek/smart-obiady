@@ -1268,6 +1268,155 @@ body.ios-app::after {
 }
 
 /* ============================================================
+   DEALS SEARCH & SMART KEYWORD TAGS
+   ============================================================ */
+.deals-search-wrapper {
+  background: #ffffff;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-xl);
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.deals-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(248, 246, 252, 0.85);
+  border: 1.5px solid rgba(230, 215, 245, 0.8);
+  border-radius: var(--radius-full);
+  padding: 6px 10px 6px 14px;
+  transition: all 0.25s ease;
+  margin-bottom: 12px;
+}
+.deals-search-bar:focus-within {
+  background: #ffffff;
+  border-color: #f472b6;
+  box-shadow: 0 0 0 4px rgba(244, 114, 182, 0.15);
+}
+
+.search-icon-pill {
+  font-size: 1.05rem;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.deals-search-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  font-size: 0.94rem;
+  font-weight: 550;
+  font-family: inherit;
+  color: #1e1b2e;
+  outline: none;
+  caret-color: #ec4899;
+}
+.deals-search-input::placeholder {
+  color: #a39db0;
+  font-weight: 450;
+}
+
+.deals-search-clear {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(203, 195, 215, 0.4);
+  color: #4b5563;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.deals-search-clear:hover {
+  background: #fecdd3;
+  color: #be123c;
+  transform: scale(1.1);
+}
+
+.quick-tags-scroll {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+.quick-tags-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.keyword-chip {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 13px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(220, 205, 235, 0.7);
+  background: #fafaf9;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.keyword-chip:hover {
+  background: #ffffff;
+  border-color: #fb7185;
+  color: #be123c;
+  transform: translateY(-1px);
+}
+.keyword-chip.active {
+  background: linear-gradient(135deg, #fce7f3 0%, #ede9fe 100%);
+  color: #831843;
+  border-color: #f472b6;
+  box-shadow: 0 2px 8px rgba(244, 114, 182, 0.25);
+}
+
+.deals-meta-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  padding: 0 4px;
+}
+.deals-meta-info strong {
+  color: #1e1b2e;
+}
+
+.deal-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.deal-tag-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: #f5f3ff;
+  color: #7c3aed;
+  border: 1px solid rgba(221, 214, 254, 0.8);
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+.deal-tag-pill:hover {
+  background: #ede9fe;
+  border-color: #a855f7;
+  transform: translateY(-1px);
+}
+
+/* ============================================================
    15. AI SHOPPING ASSISTANT TAB & CHAT UI
    ============================================================ */
 .assistant-hero {

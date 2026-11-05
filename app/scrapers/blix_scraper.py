@@ -10,46 +10,138 @@ STORES = {
     "Kaufland": "https://blix.pl/sklep/kaufland"
 }
 
+NON_FOOD_EXCLUDE = [
+    'proszek do', 'płyn do naczyń', 'płyn do płukania', 'papier toalet', 
+    'szampon', 'żel pod prysznic', 'pasta do zębów', 'znicz', 'skarpety', 
+    'bluzka', 'kurtka', 'zabawk', 'karma dla psa', 'karma dla kota', 
+    'kapsułki do prania', 'zawieszka do wc', 'maszynki do golenia', 
+    'płyn do szyb', 'dezodorant', 'krem do rąk', 'tabletki do zmywarki', 
+    'pieluchy', 'chusteczki nawilżane', 'baterie', 'znicze', 'wkład do znicza'
+]
+
 MEAT_KEYWORDS = [
     'kurczak', 'filet', 'udo', 'podudzi', 'skrzydeł', 'indyk', 'schab', 
     'karków', 'łopatk', 'polędwic', 'wołowin', 'mielon', 'żeberk', 'kaczk', 
-    'łosoś', 'dorsz', 'pstrąg', 'krewet', 'makrel', 'ryb', 'szynk'
+    'łosoś', 'dorsz', 'pstrąg', 'krewet', 'makrel', 'ryb', 'szynk', 'kiełbas', 
+    'parówk', 'boczek', 'kabanos', 'salami', 'pasztet'
 ]
 
 DAIRY_KEYWORDS = [
     'ser ', 'ser,', 'sery', 'gouda', 'mozzarella', 'parmezan', 'grana padano', 
     'feta', 'twaróg', 'twarog', 'serek', 'mascarpone', 'ricotta', 'jogurt', 
-    'skyr', 'kefir', 'śmietan', 'masło', 'mleko'
+    'skyr', 'kefir', 'śmietan', 'masło', 'mleko', 'jaj'
 ]
 
-VEG_KEYWORDS = [
-    'ziemniak', 'pieczark', 'papryk', 'cukini', 'brokuł', 'kalafior', 
-    'marchew', 'cebul', 'czosnek', 'pomidor', 'passat', 'fasol', 'por ', 
-    'seler', 'kapust', 'dyni', 'szpinak'
+FRUIT_VEG_KEYWORDS = [
+    'truskawk', 'borówk', 'jabłk', 'banan', 'winogron', 'mandarynk', 'cytryn', 
+    'pomarańcz', 'malin', 'ziemniak', 'pieczark', 'papryk', 'cukini', 'brokuł', 
+    'kalafior', 'marchew', 'cebul', 'czosnek', 'pomidor', 'fasol', 'por ', 
+    'seler', 'kapust', 'dyni', 'szpinak', 'ogórk', 'sałat', 'awokado', 'gruszk',
+    'arbuz', 'melon', 'brzoskwini', 'śliwk'
 ]
 
-EXCLUDE_KEYWORDS = [
-    'kawa ', 'kawa,', 'kawy', 'kawa mielona', 'kawa ziarnista', 'herbata', 
-    'piwo', 'wino', 'wódka', 'whisky', 'chips', 'czips', 'czekolad', 
-    'ciastk', 'napój', 'cola', 'sok ', 'proszek', 'płyn', 'papier toalet', 
-    'szampon', 'karma dla', 'znicz', 'skarpety', 'bluzka', 'kurtka', 'zabawk'
+SNACK_KEYWORDS = [
+    'chips', 'czips', 'pringles', 'lay', 'takis', 'cheetos', 'chrupk', 
+    'orzech', 'czekolad', 'ciastk', 'wafl', 'baton', 'żelk', 'paluszk', 
+    'krakers', 'nachos', 'popcorn', 'piernik', 'praliny', 'biscof', 'cukierk'
+]
+
+DRINK_KEYWORDS = [
+    'sok', 'napój', 'cola', 'pepsi', 'fanta', 'sprite', 'woda ', 'woda,', 
+    'mineralna', 'herbata', 'kawa ', 'kawy', 'piwo'
+]
+
+PANTRY_KEYWORDS = [
+    'makaron', 'ryż', 'oliwa', 'olej ', 'passat', 'mąka', 'sos ', 'ketchup', 
+    'majonez', 'przypraw', 'cukier', 'sól '
 ]
 
 def classify_item(name: str) -> str:
     lower = name.lower()
-    if any(ex in lower for ex in EXCLUDE_KEYWORDS):
+    if any(ex in lower for ex in NON_FOOD_EXCLUDE):
         return ""
     if any(k in lower for k in MEAT_KEYWORDS):
-        if "kawa" in lower or "karma" in lower:
-            return ""
         return "Mięso i ryby"
     if any(k in lower for k in DAIRY_KEYWORDS):
-        if "piwo" in lower or "budweiser" in lower:
-            return ""
         return "Nabiał i sery"
-    if any(k in lower for k in VEG_KEYWORDS):
-        return "Warzywa i baza"
-    return ""
+    if any(k in lower for k in FRUIT_VEG_KEYWORDS):
+        return "Warzywa i owoce"
+    if any(k in lower for k in SNACK_KEYWORDS):
+        return "Przekąski i słodycze"
+    if any(k in lower for k in DRINK_KEYWORDS):
+        return "Napoje"
+    if any(k in lower for k in PANTRY_KEYWORDS):
+        return "Baza i spiżarnia"
+    return "Inne spożywcze"
+
+KEYWORD_MAP = {
+    'chips': ['chipsy', 'przekąski', 'chrupiące'],
+    'czips': ['chipsy', 'przekąski', 'chrupiące'],
+    'pringles': ['chipsy', 'pringles', 'przekąski'],
+    'lay': ['chipsy', 'lays', 'przekąski'],
+    'takis': ['chipsy', 'takis', 'ostre'],
+    'cheetos': ['chrupki', 'chipsy', 'przekąski'],
+    'truskawk': ['truskawki', 'owoce', 'świeże', 'słodkie'],
+    'borówk': ['borówki', 'owoce', 'antyoksydanty'],
+    'jabłk': ['jabłka', 'owoce', 'polskie'],
+    'winogron': ['winogrona', 'owoce', 'słodkie'],
+    'banan': ['banany', 'owoce', 'energia'],
+    'mandarynk': ['mandarynki', 'cytrusy', 'owoce'],
+    'cytryn': ['cytryny', 'cytrusy', 'witamina c'],
+    'pomarańcz': ['pomarańcze', 'cytrusy', 'owoce'],
+    'ziemniak': ['ziemniaki', 'tania baza', 'obiad'],
+    'pieczark': ['pieczarki', 'grzyby', 'obiad'],
+    'pomidor': ['pomidory', 'warzywa', 'świeże'],
+    'ogórk': ['ogórki', 'warzywa', 'chrupiące'],
+    'marchew': ['marchew', 'warzywa', 'zupa'],
+    'papryk': ['papryka', 'warzywa', 'witaminy'],
+    'brokuł': ['brokuły', 'warzywa', 'fit'],
+    'kurczak': ['kurczak', 'drób', 'wysokie białko', 'airfryer'],
+    'filet': ['filet', 'drób', 'czyste mięso', 'fit'],
+    'indyk': ['indyk', 'drób', 'lekkostrawne'],
+    'schab': ['schab', 'wieprzowina', 'kotlety'],
+    'szynk': ['szynka', 'mięso', 'wędliny'],
+    'łosoś': ['łosoś', 'ryba', 'omega-3', 'zdrowe tłuszcze'],
+    'dorsz': ['dorsz', 'ryba', 'chuda ryba'],
+    'masło': ['masło', 'tłuszcze', 'śniadanie'],
+    'twaróg': ['twaróg', 'wysokie białko', 'fit'],
+    'ser': ['ser', 'nabiał'],
+    'jogurt': ['jogurt', 'nabiał', 'probiotyk'],
+    'skyr': ['skyr', 'wysokie białko', 'fit'],
+    'mleko': ['mleko', 'nabiał'],
+    'czekolad': ['czekolada', 'słodycze', 'deser'],
+    'ciastk': ['ciastka', 'słodycze'],
+    'orzech': ['orzechy', 'zdrowe tłuszcze', 'przekąski'],
+    'sok': ['soki', 'napoje', 'witaminy'],
+    'cola': ['cola', 'napoje', 'gazowane'],
+    'kawa': ['kawa', 'kofeina', 'poranek'],
+    'herbata': ['herbata', 'napar', 'ciepło']
+}
+
+def generate_tags(name: str, category: str) -> List[str]:
+    lower = name.lower()
+    tags = set()
+    
+    if category == "Mięso i ryby":
+        tags.add("mięso")
+    elif category == "Nabiał i sery":
+        tags.add("nabiał")
+    elif category == "Warzywa i owoce":
+        if any(w in lower for w in ['truskawk', 'jabłk', 'banan', 'winogron', 'borówk', 'cytryn', 'mandarynk', 'pomarańcz', 'owoce']):
+            tags.add("owoce")
+        else:
+            tags.add("warzywa")
+    elif category == "Przekąski i słodycze":
+        tags.add("przekąski")
+    elif category == "Napoje":
+        tags.add("napoje")
+
+    for kw, kw_tags in KEYWORD_MAP.items():
+        if kw in lower:
+            for t in kw_tags:
+                tags.add(t)
+                
+    return sorted(list(tags))
 
 def analyze_nutrition_and_clean_label(name: str, category: str) -> Dict[str, str]:
     lower = name.lower()
@@ -102,12 +194,36 @@ def analyze_nutrition_and_clean_label(name: str, category: str) -> Dict[str, str
             "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne"
         }
         
-    # Warzywa i baza
-    if category == "Warzywa i baza" or any(k in lower for k in ['ziemniak', 'brokuł', 'pieczark', 'marchew', 'pomidor', 'kapust', 'papryk']):
+    # Świeże warzywa i owoce
+    if category == "Warzywa i owoce" or any(k in lower for k in ['truskawk', 'jabłk', 'banan', 'ziemniak', 'brokuł', 'pieczark', 'marchew', 'pomidor', 'kapust', 'papryk']):
         return {
             "nutri_score": "A",
             "clean_label": "CLEAN",
-            "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały"
+            "clean_label_desc": "🌿 100% naturalne witaminy i minerały prosto z natury"
+        }
+        
+    # Przekąski i chipsy
+    if category == "Przekąski i słodycze" or any(k in lower for k in ['chips', 'czips', 'czekolad', 'ciastk', 'wafl']):
+        return {
+            "nutri_score": "D",
+            "clean_label": "PROCESSED",
+            "clean_label_desc": "Przekąska rekreacyjna o wyższej zawartości tłuszczu lub cukru"
+        }
+        
+    # Napoje słodzone
+    if any(k in lower for k in ['cola', 'pepsi', 'fanta', 'sprite', 'napój']):
+        return {
+            "nutri_score": "E",
+            "clean_label": "PROCESSED",
+            "clean_label_desc": "Napój słodzony"
+        }
+        
+    # Soki 100%
+    if any(k in lower for k in ['sok 100%', 'sok jabłko', 'sok pomarańcz', 'tłoczony']):
+        return {
+            "nutri_score": "B",
+            "clean_label": "CLEAN",
+            "clean_label_desc": "🌿 Czysty sok owocowy bez dodatku cukru"
         }
         
     return {
@@ -158,12 +274,15 @@ def scrape_single_flyer(flyer_url: str, store_name: str, headers: dict) -> List[
                 page_num = str(o.get('data-page-number', '1'))
                 image_url = page_images.get(page_num) or page_images.get('1') or ''
                 analysis = analyze_nutrition_and_clean_label(name, category)
+                tags = generate_tags(name, category)
                 
                 results.append({
                     "store": store_name,
                     "name": name,
                     "price": price,
                     "category": category,
+                    "tags": tags,
+                    "tags_str": ", ".join(tags),
                     "image_url": image_url,
                     "nutri_score": analysis["nutri_score"],
                     "clean_label": analysis["clean_label"],
@@ -196,7 +315,6 @@ def scrape_store_promotions(store_name: str, store_url: str, headers: dict) -> L
                     
             unique_flyers = list(dict.fromkeys(flyer_links))[:2]
 
-        # Równoległe pobieranie gazetek danego sklepu
         results = []
         with ThreadPoolExecutor(max_workers=2) as executor:
             flyer_results = executor.map(
@@ -220,7 +338,6 @@ def scrape_all_promotions() -> List[Dict[str, Any]]:
     all_deals = []
     seen = set()
     
-    # Równoległe pobieranie wszystkich sklepów (Lidl, Biedronka, Kaufland)
     with ThreadPoolExecutor(max_workers=3) as executor:
         store_futures = [
             executor.submit(scrape_store_promotions, store_name, url, headers)

@@ -46,13 +46,16 @@
     <!-- Segmented Navigation Control (iOS Style) -->
     <nav class="segmented-control" role="tablist">
       <button class="segment-btn active" onclick="switchTab('meals', this)">
-        <span>📅 Obiady dla 2 Osób</span>
+        <span>📅 Obiady</span>
+      </button>
+      <button class="segment-btn" onclick="switchTab('assistant', this)">
+        <span>💬 Asystent AI</span>
       </button>
       <button class="segment-btn" onclick="switchTab('deals', this)">
-        <span>🏷️ Promocje & Jakość</span>
+        <span>🏷️ Promocje</span>
       </button>
       <button class="segment-btn" onclick="switchTab('shopping', this)">
-        <span>🛒 Koszyk Zakupowy</span>
+        <span>🛒 Koszyk</span>
       </button>
     </nav>
 
@@ -119,7 +122,52 @@
       </section>
     </main>
 
-    <!-- TAB 2: PROMOTIONS CATALOG -->
+    <!-- TAB 2: AI SHOPPING ASSISTANT -->
+    <section id="tab-assistant" class="tab-pane">
+      <div class="assistant-hero">
+        <div class="hero-chip">
+          <span class="chip-dot"></span>
+          <span>INTELIGENTNY ASYSTENT ZAKUPÓW</span>
+        </div>
+        <h2 class="assistant-headline">Sprawdź, co i gdzie jest w promocji</h2>
+        <p class="assistant-sub">Napisz, czego potrzebujesz – asystent przeszuka gazetki Lidla, Biedronki i Kauflandu, sprawdzi aktualne daty ważności, czysty skład i podpowie najtańszą opcję dla dwojga!</p>
+        
+        <div class="quick-prompts-bar">
+          <button class="quick-prompt-chip" onclick="askQuickPrompt('Gdzie kupię najtańsze mięso na obiad dla dwojga?')">🥩 Gdzie najtańsze mięso?</button>
+          <button class="quick-prompt-chip" onclick="askQuickPrompt('Czy jest w promocji łosoś albo świeża ryba?')">🐟 Czy jest łosoś lub ryba?</button>
+          <button class="quick-prompt-chip" onclick="askQuickPrompt('Tani nabiał z czystym składem (skyr, twaróg, sery)')">🧀 Tani czysty nabiał</button>
+          <button class="quick-prompt-chip" onclick="askQuickPrompt('Jakie są tanie warzywa na obiad do Airfryera?')">🥦 Warzywa do Airfryera</button>
+        </div>
+      </div>
+
+      <!-- Chat Stream Box -->
+      <div class="assistant-chat-box" id="assistantChatBox">
+        <div class="chat-msg bot-msg">
+          <div class="bot-avatar">🤖</div>
+          <div class="msg-bubble">
+            <p><strong>Cześć! 👋</strong> Jestem Waszym asystentem zakupowym. Pomogę Wam zmieścić się w budżecie 600 zł miesięcznie i sprawdzę gazetki <strong>Lidla, Biedronki i Kauflandu</strong>.</p>
+            <p>Napisz poniżej, czego szukasz (np. <em>kurczak</em>, <em>łosoś</em>, <em>twaróg</em> albo <em>szybki obiad</em>), a natychmiast powiem Ci, gdzie jest najtaniej i do kiedy trwa promocja!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input Field -->
+      <form class="assistant-input-bar" id="assistantForm" onsubmit="handleAssistantSubmit(event)">
+        <input 
+          type="text" 
+          id="assistantInput" 
+          class="assistant-text-field" 
+          placeholder="Zapytaj asystenta (np. gdzie najtaniej kupię kurczaka?)..." 
+          autocomplete="off"
+        >
+        <button type="submit" id="assistantSendBtn" class="assistant-send-btn" title="Wyślij">
+          <span id="sendIcon">➤</span>
+          <div class="ios-spinner-sm hidden" id="sendSpinner"></div>
+        </button>
+      </form>
+    </section>
+
+    <!-- TAB 3: PROMOTIONS CATALOG -->
     <section id="tab-deals" class="tab-pane">
       <div class="filter-sheet">
         <div class="filter-row">

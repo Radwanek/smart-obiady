@@ -4,6 +4,7 @@ from fastapi import FastAPI, BackgroundTasks, Query
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
+from pydantic import BaseModel
 
 from app.database import (
     init_db, 
@@ -13,6 +14,7 @@ from app.database import (
 )
 from app.scheduler import start_scheduler, run_full_sync_task, is_syncing
 from app.config import SCHEDULE_HOURS
+from app.ai.assistant import ask_shopping_assistant
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -75,6 +77,13 @@ async def trigger_refresh(background_tasks: BackgroundTasks):
         
     background_tasks.add_task(run_full_sync_task)
     return {"status": "STARTED", "message": "Rozpoczęto pobieranie promocji i generowanie obiadów w tle."}
+
+class AssistantRequest(BaseModel):
+    message: str
+
+@app.post("/api/assistant")
+def chat_with_assistant(req: AssistantRequest):
+    return ask_shopping_assistant(req.message)
 
 # Mount static frontend
 app.mount("/", StaticFiles(directory="app/static", html=True), name="static")

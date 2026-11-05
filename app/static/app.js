@@ -27,10 +27,10 @@ function switchTab(tabId, btnElement) {
   if (btnElement) {
     btnElement.classList.add('active');
   } else {
+    const tabMap = { 'meals': 0, 'assistant': 1, 'deals': 2, 'shopping': 3 };
+    const idx = tabMap[tabId] ?? 0;
     const btns = document.querySelectorAll('.segment-btn');
-    if (tabId === 'meals') btns[0]?.classList.add('active');
-    if (tabId === 'deals') btns[1]?.classList.add('active');
-    if (tabId === 'shopping') btns[2]?.classList.add('active');
+    if (btns[idx]) btns[idx].classList.add('active');
   }
   
   const pane = document.getElementById(`tab-${tabId}`);
@@ -38,6 +38,10 @@ function switchTab(tabId, btnElement) {
   
   if (tabId === 'shopping' && activePlanData) {
     renderShoppingList(activePlanData);
+  }
+  if (tabId === 'assistant') {
+    const input = document.getElementById('assistantInput');
+    if (input) setTimeout(() => input.focus(), 150);
   }
 }
 
@@ -272,6 +276,13 @@ async function loadPromotions() {
         const cleanClass = isClean ? 'clean' : 'processed';
         const cleanText = isClean ? '🌿 Czysty Skład' : '⚠️ Przetworzone';
         
+        const dateBadge = d.date_badge ? `
+          <span class="date-badge ${d.is_urgent ? 'urgent' : ''}">⏰ ${escapeHtml(d.date_badge)}</span>
+        ` : '';
+        const appBadge = d.is_app_deal ? `
+          <span class="app-deal-badge">📱 ${escapeHtml(d.app_badge || 'Z aplikacją')}</span>
+        ` : '';
+
         const hasImg = d.image_url && d.image_url.startsWith('http');
         const imgBtn = hasImg ? `
           <button class="flyer-thumb-btn" onclick="openLightbox('${escapeHtml(d.image_url)}', '${escapeHtml(d.store)} - Gazetka (strona ${d.page_number || '1'})', '${escapeHtml(d.name)}')">
@@ -290,6 +301,8 @@ async function loadPromotions() {
               
               <div class="deal-quality-row">
                 <span class="clean-label-pill ${cleanClass}">${cleanText}</span>
+                ${dateBadge}
+                ${appBadge}
                 ${imgBtn}
               </div>
               ${d.clean_label_desc ? `<p class="clean-desc">${escapeHtml(d.clean_label_desc)}</p>` : ''}
@@ -484,4 +497,142 @@ function escapeHtml(str) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+/* ============================================================
+   AI SHOPPING ASSISTANT
+   ============================================================ */
+async function handleAssistantSubmit(e) {
+  if (e) e.preventDefault();
+  const input = document.getElementById('assistantInput');
+  const query = input.value.trim();
+  if (!query) return;
+  
+  input.value = '';
+  await sendAssistantMessage(query);
+}
+
+function askQuickPrompt(text) {
+  switchTab('assistant');
+  const input = document.getElementById('assistantInput');
+  if (input) input.value = text;
+  sendAssistantMessage(text);
+}
+
+async function sendAssistantMessage(userText) {
+  const chatBox = document.getElementById('assistantChatBox');
+  const sendBtn = document.getElementById('assistantSendBtn');
+  const sendIcon = document.getElementById('sendIcon');
+  const sendSpinner = document.getElementById('sendSpinner');
+  
+  // 1. Append user bubble
+  const userHtml = `
+    <div class="chat-msg user-msg">
+      <div class="msg-bubble">
+        <p>${escapeHtml(userText)}</p>
+      </div>
+    </div>
+  `;
+  chatBox.insertAdjacentHTML('beforeend', userHtml);
+  chatBox.scrollTop = chatBox.scrollHeight;
+  
+  // 2. Loading state & temporary bot bubble
+  sendBtn.disabled = true;
+  sendIcon.classList.add('hidden');
+  sendSpinner.classList.remove('hidden');
+  
+  const loadingId = `typing_${Date.now()}`;
+  const typingHtml = `
+    <div class="chat-msg bot-msg" id="${loadingId}">
+      <div class="bot-avatar">🤖</div>
+      <div class="msg-bubble">
+        <p style="color:var(--text-muted); font-style:italic;">
+          Szukam w aktualnych gazetkach Lidla, Biedronki i Kauflandu... 🔍
+        </p>
+      </div>
+    </div>
+  `;
+  chatBox.insertAdjacentHTML('beforeend', typingHtml);
+  chatBox.scrollTop = chatBox.scrollHeight;
+  
+  try {
+    const res = await fetch('/api/assistant', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: userText })
+    });
+    const data = await res.json();
+    
+    // Remove typing bubble
+    const typingEl = document.getElementById(loadingId);
+    if (typingEl) typingEl.remove();
+    
+    // Format markdown
+    let replyHtml = (data.reply || '')
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.*?)\*/g, '<em>$1</em>')
+      .replace(/### (.*?)\n/g, '<h4 style="margin:10px 0 4px; font-size:1rem; font-weight:800; color:#1e1b2e;">$1</h4>')
+      .replace(/## (.*?)\n/g, '<h3 style="margin:12px 0 6px; font-size:1.1rem; font-weight:800; color:#1e1b2e;">$1</h3>')
+      .replace(/\n\n/g, '</p><p>')
+      .replace(/\n- /g, '<br>• ');
+      
+    // Render mini cards for matched deals
+    let shelfHtml = '';
+    if (data.matched_deals && data.matched_deals.length > 0) {
+      shelfHtml = `
+        <div class="matched-deals-shelf">
+          <div class="shelf-title">Znalezione okazje w gazetkach:</div>
+          <div class="mini-deals-list">
+            ${data.matched_deals.map(d => {
+              const storeClass = `store-pill ${(d.store || '').toLowerCase()}`;
+              const clickFn = d.image_url ? `onclick="openLightbox('${escapeHtml(d.image_url)}', '${escapeHtml(d.store)} - Gazetka (strona ${d.page_number || '1'})', '${escapeHtml(d.name)}')"` : '';
+              return `
+                <div class="mini-deal-card" ${clickFn}>
+                  ${d.image_url ? `<img src="${escapeHtml(d.image_url)}" class="mini-deal-img" alt="">` : ''}
+                  <div class="mini-deal-body">
+                    <div class="mini-deal-name">${escapeHtml(d.name)}</div>
+                    <div class="mini-deal-meta">
+                      <span class="${storeClass}" style="font-size:0.65rem; padding:2px 6px;">${escapeHtml(d.store)}</span>
+                      <span class="mini-deal-price">${escapeHtml(d.price)}</span>
+                    </div>
+                    ${d.date_badge ? `<span style="font-size:0.68rem; color:#6b21a8; font-weight:700;">⏰ ${escapeHtml(d.date_badge)}</span>` : ''}
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+    }
+    
+    const botResponseHtml = `
+      <div class="chat-msg bot-msg">
+        <div class="bot-avatar">🤖</div>
+        <div class="msg-bubble">
+          <p>${replyHtml}</p>
+          ${shelfHtml}
+        </div>
+      </div>
+    `;
+    chatBox.insertAdjacentHTML('beforeend', botResponseHtml);
+    chatBox.scrollTop = chatBox.scrollHeight;
+    
+  } catch (err) {
+    console.error('Assistant error:', err);
+    const typingEl = document.getElementById(loadingId);
+    if (typingEl) typingEl.remove();
+    
+    chatBox.insertAdjacentHTML('beforeend', `
+      <div class="chat-msg bot-msg">
+        <div class="bot-avatar">🤖</div>
+        <div class="msg-bubble" style="color:#b91c1c;">
+          Wystąpił błąd podczas rozmowy z asystentem. Spróbuj ponownie za chwilę.
+        </div>
+      </div>
+    `);
+  } finally {
+    sendBtn.disabled = false;
+    sendIcon.classList.remove('hidden');
+    sendSpinner.classList.add('hidden');
+  }
 }

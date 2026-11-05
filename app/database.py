@@ -189,7 +189,91 @@ def save_promotions(deals: List[Dict[str, Any]]) -> int:
     conn.close()
     return inserted
 
-def get_recent_promotions(limit: int = 80, store: Optional[str] = None, category: Optional[str] = None) -> List[Dict[str, Any]]:
+MONTH_NAMES_PL = {
+    "January": "sty", "February": "lut", "March": "mar", "April": "kwi",
+    "May": "maj", "June": "cze", "July": "lip", "August": "sie",
+    "September": "wrz", "October": "paź", "November": "lis", "December": "gru"
+}
+
+WEEKDAYS_PL = {
+    0: "pon", 1: "wt", 2: "śr", 3: "czw", 4: "pt", 5: "sob", 6: "nd"
+}
+
+def parse_date_end(date_str: str) -> Optional[datetime]:
+    if not date_str:
+        return None
+    for fmt in ("%B %d, %Y %H:%M", "%B %d, %Y", "%d.%m.%Y", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(date_str.strip(), fmt)
+        except Exception:
+            pass
+    return None
+
+def format_date_badge(date_str: str) -> Dict[str, Any]:
+    dt = parse_date_end(date_str)
+    if not dt:
+        return {
+            "is_active": True,
+            "badge_text": "Aktualna oferta",
+            "is_urgent": False,
+            "days_left": None
+        }
+    
+    now = datetime.now()
+    if dt < now:
+        return {
+            "is_active": False,
+            "badge_text": "Oferta zakończona",
+            "is_urgent": False,
+            "days_left": -1
+        }
+    
+    diff_days = (dt.date() - now.date()).days
+    weekday = WEEKDAYS_PL.get(dt.weekday(), "")
+    month_en = dt.strftime("%B")
+    month_pl = MONTH_NAMES_PL.get(month_en, dt.strftime("%m"))
+    date_formatted = f"{dt.day} {month_pl}"
+    
+    if diff_days == 0:
+        badge_text = "🔥 Kończy się dziś!"
+        is_urgent = True
+    elif diff_days == 1:
+        badge_text = "⏰ Tylko do jutra!"
+        is_urgent = True
+    else:
+        badge_text = f"Ważne do {weekday} ({date_formatted})"
+        is_urgent = False
+        
+    return {
+        "is_active": True,
+        "badge_text": badge_text,
+        "is_urgent": is_urgent,
+        "days_left": diff_days,
+        "formatted_date": f"{date_formatted} ({weekday})"
+    }
+
+def check_app_deal(name: str, store: str) -> Dict[str, Any]:
+    lower = (name or "").lower()
+    is_app = False
+    badge = ""
+    if any(k in lower for k in ["plus", "aplikac", "karta", "kaufland card", "moja biedronka", "lidl plus"]):
+        is_app = True
+        if "lidl" in (store or "").lower():
+            badge = "Lidl Plus"
+        elif "biedronka" in (store or "").lower():
+            badge = "Moja Biedronka"
+        elif "kaufland" in (store or "").lower():
+            badge = "Kaufland Card"
+        else:
+            badge = "Z aplikacją"
+    return {"is_app_deal": is_app, "app_badge": badge}
+
+def get_recent_promotions(
+    limit: int = 80, 
+    store: Optional[str] = None, 
+    category: Optional[str] = None,
+    only_active: bool = True
+) -> List[Dict[str, Any]]:
     conn = get_connection()
     cursor = conn.cursor()
     
@@ -203,13 +287,81 @@ def get_recent_promotions(limit: int = 80, store: Optional[str] = None, category
         query += " AND LOWER(category) = LOWER(?)"
         params.append(category)
         
+    # Pobierz nieco więcej, aby po odfiltrowaniu przeterminowanych zachować żądany limit
+    fetch_limit = limit * 2 if only_active else limit
     query += " ORDER BY updated_at DESC LIMIT ?"
-    params.append(limit)
+    params.append(fetch_limit)
     
     cursor.execute(query, params)
     rows = cursor.fetchall()
     conn.close()
-    return [dict(r) for r in rows]
+    
+    enriched = []
+    for r in rows:
+        d = dict(r)
+        date_info = format_date_badge(d.get("date_end", ""))
+        app_info = check_app_deal(d.get("name", ""), d.get("store", ""))
+        
+        d["date_badge"] = date_info["badge_text"]
+        d["is_urgent"] = date_info["is_urgent"]
+        d["is_active"] = date_info["is_active"]
+        d["is_app_deal"] = app_info["is_app_deal"]
+        d["app_badge"] = app_info["app_badge"]
+        
+        if only_active and not date_info["is_active"]:
+            continue
+            
+        enriched.append(d)
+        if len(enriched) >= limit:
+            break
+            
+    return enriched
+
+def search_active_promotions(query: str, limit: int = 30) -> List[Dict[str, Any]]:
+    conn = get_connection()
+    cursor = conn.cursor()
+    
+    terms = [t.strip().lower() for t in query.split() if len(t.strip()) > 1]
+    # Filtrujemy popularne słówka pomocnicze
+    stopwords = {"czy", "jest", "gdzie", "jak", "dla", "jaka", "jaki", "tani", "tanie", "kupic", "kupię", "polecasz"}
+    meaningful_terms = [t for t in terms if t not in stopwords]
+    if not meaningful_terms:
+        meaningful_terms = terms
+        
+    if not meaningful_terms:
+        cursor.execute("SELECT * FROM promotions ORDER BY updated_at DESC LIMIT ?", (limit * 2,))
+        rows = cursor.fetchall()
+    else:
+        clauses = []
+        params = []
+        for term in meaningful_terms:
+            clauses.append("(LOWER(name) LIKE ? OR LOWER(category) LIKE ? OR LOWER(store) LIKE ?)")
+            p = f"%{term}%"
+            params.extend([p, p, p])
+        sql = f"SELECT * FROM promotions WHERE {' OR '.join(clauses)} ORDER BY updated_at DESC LIMIT ?"
+        params.append(limit * 3)
+        cursor.execute(sql, params)
+        rows = cursor.fetchall()
+        
+    conn.close()
+    
+    results = []
+    for r in rows:
+        d = dict(r)
+        date_info = format_date_badge(d.get("date_end", ""))
+        if not date_info["is_active"]:
+            continue
+        app_info = check_app_deal(d.get("name", ""), d.get("store", ""))
+        d["date_badge"] = date_info["badge_text"]
+        d["is_urgent"] = date_info["is_urgent"]
+        d["is_active"] = True
+        d["is_app_deal"] = app_info["is_app_deal"]
+        d["app_badge"] = app_info["app_badge"]
+        results.append(d)
+        if len(results) >= limit:
+            break
+            
+    return results
 
 def save_meal_plan(weekly_summary: str, meals: List[Dict[str, Any]], total_cost: str = "", budget_remaining: str = "") -> int:
     conn = get_connection()

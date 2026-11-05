@@ -14,7 +14,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 2,
@@ -30,7 +35,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 3,
@@ -46,7 +56,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 4,
@@ -62,7 +77,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 5,
@@ -78,7 +98,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 6,
@@ -94,7 +119,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 7,
@@ -110,7 +140,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 8,
@@ -126,7 +161,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "6"
+      "page_number": "6",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 9,
@@ -142,7 +182,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "7"
+      "page_number": "7",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 10,
@@ -158,7 +203,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "7"
+      "page_number": "7",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 11,
@@ -174,7 +224,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "10"
+      "page_number": "10",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 12,
@@ -190,7 +245,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "11"
+      "page_number": "11",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 13,
@@ -206,7 +266,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "11"
+      "page_number": "11",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 14,
@@ -222,7 +287,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "12"
+      "page_number": "12",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 15,
@@ -238,7 +308,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "12"
+      "page_number": "12",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 16,
@@ -254,7 +329,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "28"
+      "page_number": "28",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 17,
@@ -270,7 +350,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "28"
+      "page_number": "28",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 18,
@@ -286,7 +371,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "28"
+      "page_number": "28",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 19,
@@ -302,7 +392,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 20,
@@ -318,7 +413,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 21,
@@ -334,7 +434,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 22,
@@ -350,7 +455,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 23,
@@ -366,7 +476,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 24,
@@ -382,7 +497,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 25,
@@ -398,7 +518,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 26,
@@ -414,7 +539,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "31"
+      "page_number": "31",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 27,
@@ -430,7 +560,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "31"
+      "page_number": "31",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 28,
@@ -446,7 +581,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "31"
+      "page_number": "31",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 29,
@@ -462,7 +602,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 30,
@@ -478,7 +623,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "37"
+      "page_number": "37",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 31,
@@ -494,7 +644,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "50"
+      "page_number": "50",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 32,
@@ -510,7 +665,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "50"
+      "page_number": "50",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 33,
@@ -526,7 +686,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "54"
+      "page_number": "54",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 34,
@@ -542,7 +707,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "54"
+      "page_number": "54",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 35,
@@ -558,7 +728,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "54"
+      "page_number": "54",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 36,
@@ -574,7 +749,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "54"
+      "page_number": "54",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 37,
@@ -590,7 +770,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "56"
+      "page_number": "56",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 38,
@@ -606,7 +791,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "57"
+      "page_number": "57",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 39,
@@ -622,7 +812,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "57"
+      "page_number": "57",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 40,
@@ -638,7 +833,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "60"
+      "page_number": "60",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 41,
@@ -654,7 +854,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "60"
+      "page_number": "60",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 42,
@@ -670,7 +875,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "60"
+      "page_number": "60",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 43,
@@ -686,7 +896,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "60"
+      "page_number": "60",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 44,
@@ -702,7 +917,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "61"
+      "page_number": "61",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 45,
@@ -718,7 +938,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "61"
+      "page_number": "61",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 46,
@@ -734,7 +959,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "61"
+      "page_number": "61",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 47,
@@ -750,7 +980,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "61"
+      "page_number": "61",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 48,
@@ -766,7 +1001,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "62"
+      "page_number": "62",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 49,
@@ -782,7 +1022,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "62"
+      "page_number": "62",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 50,
@@ -798,7 +1043,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "63"
+      "page_number": "63",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 51,
@@ -814,7 +1064,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "63"
+      "page_number": "63",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 52,
@@ -830,7 +1085,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "63"
+      "page_number": "63",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 53,
@@ -846,7 +1106,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "63"
+      "page_number": "63",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 54,
@@ -862,7 +1127,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "63"
+      "page_number": "63",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 55,
@@ -878,7 +1148,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "63"
+      "page_number": "63",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 56,
@@ -894,7 +1169,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "63"
+      "page_number": "63",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 57,
@@ -910,7 +1190,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "63"
+      "page_number": "63",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 58,
@@ -926,7 +1211,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "64"
+      "page_number": "64",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 59,
@@ -942,7 +1232,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "64"
+      "page_number": "64",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 60,
@@ -958,7 +1253,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "64"
+      "page_number": "64",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 61,
@@ -974,7 +1274,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "64"
+      "page_number": "64",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 62,
@@ -990,7 +1295,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "65"
+      "page_number": "65",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 63,
@@ -1006,7 +1316,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "65"
+      "page_number": "65",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 64,
@@ -1022,7 +1337,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "65"
+      "page_number": "65",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 65,
@@ -1038,7 +1358,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "65"
+      "page_number": "65",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 66,
@@ -1054,7 +1379,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "65"
+      "page_number": "65",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 67,
@@ -1070,7 +1400,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "66"
+      "page_number": "66",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 68,
@@ -1086,7 +1421,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "66"
+      "page_number": "66",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 69,
@@ -1102,7 +1442,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "66"
+      "page_number": "66",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 70,
@@ -1118,7 +1463,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "66"
+      "page_number": "66",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 71,
@@ -1134,7 +1484,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "67"
+      "page_number": "67",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 72,
@@ -1150,7 +1505,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "67"
+      "page_number": "67",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 73,
@@ -1166,7 +1526,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "67"
+      "page_number": "67",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 74,
@@ -1182,7 +1547,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "67"
+      "page_number": "67",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 75,
@@ -1198,7 +1568,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "67"
+      "page_number": "67",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 76,
@@ -1214,7 +1589,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "68"
+      "page_number": "68",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 77,
@@ -1230,7 +1610,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "68"
+      "page_number": "68",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 78,
@@ -1246,7 +1631,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "68"
+      "page_number": "68",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 79,
@@ -1262,7 +1652,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "68"
+      "page_number": "68",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 80,
@@ -1278,7 +1673,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "68"
+      "page_number": "68",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 81,
@@ -1294,7 +1694,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "80"
+      "page_number": "80",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 82,
@@ -1310,7 +1715,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "80"
+      "page_number": "80",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 83,
@@ -1326,7 +1736,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "80"
+      "page_number": "80",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 84,
@@ -1342,7 +1757,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "80"
+      "page_number": "80",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 85,
@@ -1358,7 +1778,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "80"
+      "page_number": "80",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 86,
@@ -1374,7 +1799,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "90"
+      "page_number": "90",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 87,
@@ -1390,7 +1820,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "91"
+      "page_number": "91",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 88,
@@ -1406,7 +1841,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "91"
+      "page_number": "91",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 89,
@@ -1422,7 +1862,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "91"
+      "page_number": "91",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 90,
@@ -1438,7 +1883,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "98"
+      "page_number": "98",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 91,
@@ -1454,7 +1904,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "101"
+      "page_number": "101",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 92,
@@ -1470,7 +1925,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "108"
+      "page_number": "108",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 93,
@@ -1486,7 +1946,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "112"
+      "page_number": "112",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 94,
@@ -1502,7 +1967,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 95,
@@ -1518,7 +1988,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 96,
@@ -1534,7 +2009,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 97,
@@ -1550,7 +2030,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 98,
@@ -1566,7 +2051,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 99,
@@ -1582,7 +2072,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 100,
@@ -1598,7 +2093,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 101,
@@ -1614,7 +2114,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 102,
@@ -1630,7 +2135,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 103,
@@ -1646,7 +2156,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 104,
@@ -1662,7 +2177,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 105,
@@ -1678,7 +2198,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 106,
@@ -1694,7 +2219,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 107,
@@ -1710,7 +2240,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 108,
@@ -1726,7 +2261,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 109,
@@ -1742,7 +2282,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 110,
@@ -1758,7 +2303,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 111,
@@ -1774,7 +2324,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 112,
@@ -1790,7 +2345,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 113,
@@ -1806,7 +2366,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 114,
@@ -1822,7 +2387,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 115,
@@ -1838,7 +2408,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "3"
+      "page_number": "3",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 116,
@@ -1854,7 +2429,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "4"
+      "page_number": "4",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 117,
@@ -1870,7 +2450,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "4"
+      "page_number": "4",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 118,
@@ -1886,7 +2471,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "4"
+      "page_number": "4",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 119,
@@ -1902,7 +2492,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "4"
+      "page_number": "4",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 120,
@@ -1918,7 +2513,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "4"
+      "page_number": "4",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 121,
@@ -1934,7 +2534,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "4"
+      "page_number": "4",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 122,
@@ -1950,7 +2555,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "4"
+      "page_number": "4",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 123,
@@ -1966,7 +2576,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "5"
+      "page_number": "5",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 124,
@@ -1982,7 +2597,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "5"
+      "page_number": "5",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 125,
@@ -1998,7 +2618,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "5"
+      "page_number": "5",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 126,
@@ -2014,7 +2639,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "5"
+      "page_number": "5",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 127,
@@ -2030,7 +2660,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "6"
+      "page_number": "6",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 128,
@@ -2046,7 +2681,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "6"
+      "page_number": "6",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 129,
@@ -2062,7 +2702,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "8"
+      "page_number": "8",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 130,
@@ -2078,7 +2723,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "8"
+      "page_number": "8",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 131,
@@ -2094,7 +2744,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "8"
+      "page_number": "8",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 132,
@@ -2110,7 +2765,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "8"
+      "page_number": "8",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 133,
@@ -2126,7 +2786,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "9"
+      "page_number": "9",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 134,
@@ -2142,7 +2807,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "14"
+      "page_number": "14",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 135,
@@ -2158,7 +2828,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "14"
+      "page_number": "14",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 136,
@@ -2174,7 +2849,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "14"
+      "page_number": "14",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": true,
+      "app_badge": "Moja Biedronka"
     },
     {
       "id": 137,
@@ -2190,7 +2870,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "17"
+      "page_number": "17",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 138,
@@ -2206,7 +2891,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "17"
+      "page_number": "17",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 139,
@@ -2222,7 +2912,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "17"
+      "page_number": "17",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 140,
@@ -2238,7 +2933,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "19"
+      "page_number": "19",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 141,
@@ -2254,7 +2954,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "20"
+      "page_number": "20",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 142,
@@ -2270,7 +2975,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "20"
+      "page_number": "20",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 143,
@@ -2286,7 +2996,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "20"
+      "page_number": "20",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 144,
@@ -2302,7 +3017,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "20"
+      "page_number": "20",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 145,
@@ -2318,7 +3038,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "20"
+      "page_number": "20",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 146,
@@ -2334,7 +3059,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "20"
+      "page_number": "20",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 147,
@@ -2350,7 +3080,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "21"
+      "page_number": "21",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 148,
@@ -2366,7 +3101,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "21"
+      "page_number": "21",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 149,
@@ -2382,7 +3122,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "21"
+      "page_number": "21",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 150,
@@ -2398,7 +3143,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "24"
+      "page_number": "24",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 151,
@@ -2414,7 +3164,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "25"
+      "page_number": "25",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 152,
@@ -2430,7 +3185,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "26"
+      "page_number": "26",
+      "date_badge": "🔥 Kończy się dziś!",
+      "is_urgent": true,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 153,
@@ -2446,7 +3206,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 154,
@@ -2462,7 +3227,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 155,
@@ -2478,7 +3248,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 156,
@@ -2494,7 +3269,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "28"
+      "page_number": "28",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 157,
@@ -2510,7 +3290,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "31"
+      "page_number": "31",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 158,
@@ -2526,7 +3311,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "32"
+      "page_number": "32",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 159,
@@ -2542,7 +3332,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "32"
+      "page_number": "32",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 160,
@@ -2558,7 +3353,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "32"
+      "page_number": "32",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 161,
@@ -2574,7 +3374,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "32"
+      "page_number": "32",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 162,
@@ -2590,7 +3395,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "32"
+      "page_number": "32",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 163,
@@ -2606,7 +3416,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "33"
+      "page_number": "33",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 164,
@@ -2622,7 +3437,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "33"
+      "page_number": "33",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 165,
@@ -2638,7 +3458,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "33"
+      "page_number": "33",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 166,
@@ -2654,7 +3479,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "33"
+      "page_number": "33",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 167,
@@ -2670,7 +3500,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "33"
+      "page_number": "33",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 168,
@@ -2686,7 +3521,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "34"
+      "page_number": "34",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 169,
@@ -2702,7 +3542,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "34"
+      "page_number": "34",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 170,
@@ -2718,7 +3563,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "34"
+      "page_number": "34",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 171,
@@ -2734,7 +3584,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 172,
@@ -2750,7 +3605,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 173,
@@ -2766,7 +3626,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 174,
@@ -2782,7 +3647,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 175,
@@ -2798,7 +3668,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "36"
+      "page_number": "36",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 176,
@@ -2814,7 +3689,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "36"
+      "page_number": "36",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 177,
@@ -2830,7 +3710,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "36"
+      "page_number": "36",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 178,
@@ -2846,7 +3731,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "36"
+      "page_number": "36",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 179,
@@ -2862,7 +3752,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "37"
+      "page_number": "37",
+      "date_badge": "Ważne do śr (11 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 180,
@@ -2878,7 +3773,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "37"
+      "page_number": "37",
+      "date_badge": "Ważne do śr (11 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 181,
@@ -2894,7 +3794,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "37"
+      "page_number": "37",
+      "date_badge": "Ważne do śr (11 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 182,
@@ -2910,7 +3815,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "38"
+      "page_number": "38",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 183,
@@ -2926,7 +3836,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "40"
+      "page_number": "40",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 184,
@@ -2942,7 +3857,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "49"
+      "page_number": "49",
+      "date_badge": "Ważne do śr (11 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 185,
@@ -2958,7 +3878,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "50"
+      "page_number": "50",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 186,
@@ -2974,7 +3899,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "50"
+      "page_number": "50",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 187,
@@ -2990,7 +3920,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "51"
+      "page_number": "51",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 188,
@@ -3006,7 +3941,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "51"
+      "page_number": "51",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 189,
@@ -3022,7 +3962,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "53"
+      "page_number": "53",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 190,
@@ -3038,7 +3983,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "54"
+      "page_number": "54",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 191,
@@ -3054,7 +4004,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "55"
+      "page_number": "55",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 192,
@@ -3070,7 +4025,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "55"
+      "page_number": "55",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 193,
@@ -3086,7 +4046,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "55"
+      "page_number": "55",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 194,
@@ -3102,7 +4067,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "56"
+      "page_number": "56",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 195,
@@ -3118,7 +4088,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "56"
+      "page_number": "56",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 196,
@@ -3134,7 +4109,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "56"
+      "page_number": "56",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 197,
@@ -3150,7 +4130,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "56"
+      "page_number": "56",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 198,
@@ -3166,7 +4151,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "56"
+      "page_number": "56",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 199,
@@ -3182,7 +4172,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "57"
+      "page_number": "57",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 200,
@@ -3198,7 +4193,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "57"
+      "page_number": "57",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 201,
@@ -3214,7 +4214,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "57"
+      "page_number": "57",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 202,
@@ -3230,7 +4235,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "57"
+      "page_number": "57",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 203,
@@ -3246,7 +4256,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "80"
+      "page_number": "80",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 204,
@@ -3262,7 +4277,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "81"
+      "page_number": "81",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 205,
@@ -3278,7 +4298,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "81"
+      "page_number": "81",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 206,
@@ -3294,7 +4319,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 207,
@@ -3310,7 +4340,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 208,
@@ -3326,7 +4361,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "34"
+      "page_number": "34",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 209,
@@ -3342,7 +4382,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "34"
+      "page_number": "34",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 210,
@@ -3358,7 +4403,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 211,
@@ -3374,7 +4424,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "36"
+      "page_number": "36",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 212,
@@ -3390,7 +4445,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "36"
+      "page_number": "36",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 213,
@@ -3406,7 +4466,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "36"
+      "page_number": "36",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 214,
@@ -3422,7 +4487,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "37"
+      "page_number": "37",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 215,
@@ -3438,7 +4508,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "37"
+      "page_number": "37",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 216,
@@ -3454,7 +4529,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "76"
+      "page_number": "76",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 217,
@@ -3470,7 +4550,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 218,
@@ -3486,7 +4571,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 219,
@@ -3502,7 +4592,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 220,
@@ -3518,7 +4613,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "2"
+      "page_number": "2",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 221,
@@ -3534,7 +4634,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "2"
+      "page_number": "2",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 222,
@@ -3550,7 +4655,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "2"
+      "page_number": "2",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 223,
@@ -3566,7 +4676,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "4"
+      "page_number": "4",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 224,
@@ -3582,7 +4697,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "5"
+      "page_number": "5",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 225,
@@ -3598,7 +4718,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "5"
+      "page_number": "5",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 226,
@@ -3614,7 +4739,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "5"
+      "page_number": "5",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 227,
@@ -3630,7 +4760,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "6"
+      "page_number": "6",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 228,
@@ -3646,7 +4781,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "6"
+      "page_number": "6",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 229,
@@ -3662,7 +4802,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "6"
+      "page_number": "6",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 230,
@@ -3678,7 +4823,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "6"
+      "page_number": "6",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 231,
@@ -3694,7 +4844,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "6"
+      "page_number": "6",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 232,
@@ -3710,7 +4865,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "7"
+      "page_number": "7",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 233,
@@ -3726,7 +4886,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "10"
+      "page_number": "10",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 234,
@@ -3742,7 +4907,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "12"
+      "page_number": "12",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 235,
@@ -3758,7 +4928,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "12"
+      "page_number": "12",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 236,
@@ -3774,7 +4949,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "12"
+      "page_number": "12",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 237,
@@ -3790,7 +4970,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 238,
@@ -3806,7 +4991,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 239,
@@ -3822,7 +5012,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 240,
@@ -3838,7 +5033,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 241,
@@ -3854,7 +5054,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 242,
@@ -3870,7 +5075,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 243,
@@ -3886,7 +5096,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 244,
@@ -3902,7 +5117,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "14"
+      "page_number": "14",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 245,
@@ -3918,7 +5138,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "14"
+      "page_number": "14",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 246,
@@ -3934,7 +5159,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "16"
+      "page_number": "16",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 247,
@@ -3950,7 +5180,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "16"
+      "page_number": "16",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 248,
@@ -3966,7 +5201,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "16"
+      "page_number": "16",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 249,
@@ -3982,7 +5222,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "16"
+      "page_number": "16",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 250,
@@ -3998,7 +5243,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "16"
+      "page_number": "16",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 251,
@@ -4014,7 +5264,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "17"
+      "page_number": "17",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 252,
@@ -4030,7 +5285,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "17"
+      "page_number": "17",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 253,
@@ -4046,7 +5306,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "18"
+      "page_number": "18",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 254,
@@ -4062,7 +5327,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "18"
+      "page_number": "18",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 255,
@@ -4078,7 +5348,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "18"
+      "page_number": "18",
+      "date_badge": "Ważne do sob (7 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 256,
@@ -4094,7 +5369,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "22"
+      "page_number": "22",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 257,
@@ -4110,7 +5390,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "25"
+      "page_number": "25",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 258,
@@ -4126,7 +5411,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "25"
+      "page_number": "25",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 259,
@@ -4142,7 +5432,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "25"
+      "page_number": "25",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 260,
@@ -4158,7 +5453,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "25"
+      "page_number": "25",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 261,
@@ -4174,7 +5474,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "25"
+      "page_number": "25",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 262,
@@ -4190,7 +5495,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "25"
+      "page_number": "25",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 263,
@@ -4206,7 +5516,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 264,
@@ -4222,7 +5537,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 265,
@@ -4238,7 +5558,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 266,
@@ -4254,7 +5579,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "28"
+      "page_number": "28",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 267,
@@ -4270,7 +5600,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "28"
+      "page_number": "28",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 268,
@@ -4286,7 +5621,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "28"
+      "page_number": "28",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 269,
@@ -4302,7 +5642,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 270,
@@ -4318,7 +5663,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 271,
@@ -4334,7 +5684,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 272,
@@ -4350,7 +5705,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 273,
@@ -4366,7 +5726,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 274,
@@ -4382,7 +5747,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 275,
@@ -4398,7 +5768,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 276,
@@ -4414,7 +5789,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 277,
@@ -4430,7 +5810,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "30"
+      "page_number": "30",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 278,
@@ -4446,7 +5831,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "30"
+      "page_number": "30",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 279,
@@ -4462,7 +5852,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "34"
+      "page_number": "34",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 280,
@@ -4478,7 +5873,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 281,
@@ -4494,7 +5894,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 282,
@@ -4510,7 +5915,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 283,
@@ -4526,7 +5936,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 284,
@@ -4542,7 +5957,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 285,
@@ -4558,7 +5978,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 286,
@@ -4574,7 +5999,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 287,
@@ -4590,7 +6020,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "37"
+      "page_number": "37",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 288,
@@ -4606,7 +6041,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "38"
+      "page_number": "38",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 289,
@@ -4622,7 +6062,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "38"
+      "page_number": "38",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 290,
@@ -4638,7 +6083,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "38"
+      "page_number": "38",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 291,
@@ -4654,7 +6104,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "38"
+      "page_number": "38",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 292,
@@ -4670,7 +6125,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "38"
+      "page_number": "38",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 293,
@@ -4686,7 +6146,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "38"
+      "page_number": "38",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 294,
@@ -4702,7 +6167,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "39"
+      "page_number": "39",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 295,
@@ -4718,7 +6188,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "39"
+      "page_number": "39",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 296,
@@ -4734,7 +6209,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "39"
+      "page_number": "39",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 297,
@@ -4750,7 +6230,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "39"
+      "page_number": "39",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 298,
@@ -4766,7 +6251,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "39"
+      "page_number": "39",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 299,
@@ -4782,7 +6272,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "39"
+      "page_number": "39",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 300,
@@ -4798,7 +6293,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "41"
+      "page_number": "41",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 301,
@@ -4814,7 +6314,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "41"
+      "page_number": "41",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 302,
@@ -4830,7 +6335,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "41"
+      "page_number": "41",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 303,
@@ -4846,7 +6356,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "41"
+      "page_number": "41",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 304,
@@ -4862,7 +6377,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "41"
+      "page_number": "41",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 305,
@@ -4878,7 +6398,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "41"
+      "page_number": "41",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 306,
@@ -4894,7 +6419,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "42"
+      "page_number": "42",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 307,
@@ -4910,7 +6440,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "42"
+      "page_number": "42",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 308,
@@ -4926,7 +6461,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "42"
+      "page_number": "42",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 309,
@@ -4942,7 +6482,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "42"
+      "page_number": "42",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 310,
@@ -4958,7 +6503,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "42"
+      "page_number": "42",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 311,
@@ -4974,7 +6524,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 312,
@@ -4990,7 +6545,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 313,
@@ -5006,7 +6566,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 314,
@@ -5022,7 +6587,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 315,
@@ -5038,7 +6608,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 316,
@@ -5054,7 +6629,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 317,
@@ -5070,7 +6650,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 318,
@@ -5086,7 +6671,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 319,
@@ -5102,7 +6692,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 320,
@@ -5118,7 +6713,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 321,
@@ -5134,7 +6734,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 322,
@@ -5150,7 +6755,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "44"
+      "page_number": "44",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 323,
@@ -5166,7 +6776,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "45"
+      "page_number": "45",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 324,
@@ -5182,7 +6797,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "45"
+      "page_number": "45",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 325,
@@ -5198,7 +6818,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "45"
+      "page_number": "45",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 326,
@@ -5214,7 +6839,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "59"
+      "page_number": "59",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 327,
@@ -5230,7 +6860,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "59"
+      "page_number": "59",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 328,
@@ -5246,7 +6881,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "59"
+      "page_number": "59",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 329,
@@ -5262,7 +6902,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "59"
+      "page_number": "59",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 330,
@@ -5278,7 +6923,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "59"
+      "page_number": "59",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 331,
@@ -5294,7 +6944,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "62"
+      "page_number": "62",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 332,
@@ -5310,7 +6965,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "62"
+      "page_number": "62",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 333,
@@ -5326,7 +6986,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "62"
+      "page_number": "62",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 334,
@@ -5342,7 +7007,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "66"
+      "page_number": "66",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 335,
@@ -5358,7 +7028,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "67"
+      "page_number": "67",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 336,
@@ -5374,7 +7049,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "67"
+      "page_number": "67",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 337,
@@ -5390,7 +7070,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "68"
+      "page_number": "68",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 338,
@@ -5406,7 +7091,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "68"
+      "page_number": "68",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 339,
@@ -5422,7 +7112,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "68"
+      "page_number": "68",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 340,
@@ -5438,7 +7133,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "68"
+      "page_number": "68",
+      "date_badge": "Ważne do wt (10 lis)",
+      "is_urgent": false,
+      "is_active": true,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 341,
@@ -5454,7 +7154,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 342,
@@ -5470,7 +7175,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 343,
@@ -5486,7 +7196,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 344,
@@ -5502,7 +7217,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 345,
@@ -5518,7 +7238,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "1"
+      "page_number": "1",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 346,
@@ -5534,7 +7259,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "2"
+      "page_number": "2",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 347,
@@ -5550,7 +7280,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "5"
+      "page_number": "5",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 348,
@@ -5566,7 +7301,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "9"
+      "page_number": "9",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 349,
@@ -5582,7 +7322,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "9"
+      "page_number": "9",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 350,
@@ -5598,7 +7343,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "9"
+      "page_number": "9",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 351,
@@ -5614,7 +7364,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "10"
+      "page_number": "10",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 352,
@@ -5630,7 +7385,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "10"
+      "page_number": "10",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 353,
@@ -5646,7 +7406,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "10"
+      "page_number": "10",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 354,
@@ -5662,7 +7427,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "10"
+      "page_number": "10",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 355,
@@ -5678,7 +7448,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "11"
+      "page_number": "11",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 356,
@@ -5694,7 +7469,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "11"
+      "page_number": "11",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 357,
@@ -5710,7 +7490,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "11"
+      "page_number": "11",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 358,
@@ -5726,7 +7511,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "11"
+      "page_number": "11",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 359,
@@ -5742,7 +7532,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "11"
+      "page_number": "11",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 360,
@@ -5758,7 +7553,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "11"
+      "page_number": "11",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 361,
@@ -5774,7 +7574,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "11"
+      "page_number": "11",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 362,
@@ -5790,7 +7595,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "11"
+      "page_number": "11",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 363,
@@ -5806,7 +7616,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 364,
@@ -5822,7 +7637,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 365,
@@ -5838,7 +7658,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 366,
@@ -5854,7 +7679,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 367,
@@ -5870,7 +7700,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 368,
@@ -5886,7 +7721,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "13"
+      "page_number": "13",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 369,
@@ -5902,7 +7742,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "16"
+      "page_number": "16",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 370,
@@ -5918,7 +7763,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "16"
+      "page_number": "16",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 371,
@@ -5934,7 +7784,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "16"
+      "page_number": "16",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 372,
@@ -5950,7 +7805,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "17"
+      "page_number": "17",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 373,
@@ -5966,7 +7826,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "17"
+      "page_number": "17",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 374,
@@ -5982,7 +7847,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "17"
+      "page_number": "17",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 375,
@@ -5998,7 +7868,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "21"
+      "page_number": "21",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 376,
@@ -6014,7 +7889,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "23"
+      "page_number": "23",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 377,
@@ -6030,7 +7910,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "24"
+      "page_number": "24",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 378,
@@ -6046,7 +7931,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "25"
+      "page_number": "25",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 379,
@@ -6062,7 +7952,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "25"
+      "page_number": "25",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 380,
@@ -6078,7 +7973,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "26"
+      "page_number": "26",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 381,
@@ -6094,7 +7994,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "26"
+      "page_number": "26",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 382,
@@ -6110,7 +8015,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "26"
+      "page_number": "26",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 383,
@@ -6126,7 +8036,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "26"
+      "page_number": "26",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 384,
@@ -6142,7 +8057,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "26"
+      "page_number": "26",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 385,
@@ -6158,7 +8078,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "26"
+      "page_number": "26",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 386,
@@ -6174,7 +8099,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 387,
@@ -6190,7 +8120,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 388,
@@ -6206,7 +8141,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 389,
@@ -6222,7 +8162,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 390,
@@ -6238,7 +8183,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 391,
@@ -6254,7 +8204,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "27"
+      "page_number": "27",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 392,
@@ -6270,7 +8225,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "28"
+      "page_number": "28",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 393,
@@ -6286,7 +8246,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "28"
+      "page_number": "28",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 394,
@@ -6302,7 +8267,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Świeża ryba, zdrowe kwasy tłuszczowe Omega-3",
-      "page_number": "28"
+      "page_number": "28",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 395,
@@ -6318,7 +8288,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 396,
@@ -6334,7 +8309,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 397,
@@ -6350,7 +8330,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 398,
@@ -6366,7 +8351,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 399,
@@ -6382,7 +8372,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 400,
@@ -6398,7 +8393,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "29"
+      "page_number": "29",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 401,
@@ -6414,7 +8414,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "31"
+      "page_number": "31",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 402,
@@ -6430,7 +8435,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "32"
+      "page_number": "32",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 403,
@@ -6446,7 +8456,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "32"
+      "page_number": "32",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 404,
@@ -6462,7 +8477,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "34"
+      "page_number": "34",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 405,
@@ -6478,7 +8498,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "34"
+      "page_number": "34",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 406,
@@ -6494,7 +8519,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "34"
+      "page_number": "34",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 407,
@@ -6510,7 +8540,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 408,
@@ -6526,7 +8561,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 409,
@@ -6542,7 +8582,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "35"
+      "page_number": "35",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 410,
@@ -6558,7 +8603,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "37"
+      "page_number": "37",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 411,
@@ -6574,7 +8624,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "37"
+      "page_number": "37",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 412,
@@ -6590,7 +8645,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "38"
+      "page_number": "38",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 413,
@@ -6606,7 +8666,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "38"
+      "page_number": "38",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 414,
@@ -6622,7 +8687,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "38"
+      "page_number": "38",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 415,
@@ -6638,7 +8708,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "38"
+      "page_number": "38",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 416,
@@ -6654,7 +8729,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "39"
+      "page_number": "39",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 417,
@@ -6670,7 +8750,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "39"
+      "page_number": "39",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 418,
@@ -6686,7 +8771,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "40"
+      "page_number": "40",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 419,
@@ -6702,7 +8792,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "40"
+      "page_number": "40",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 420,
@@ -6718,7 +8813,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "40"
+      "page_number": "40",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 421,
@@ -6734,7 +8834,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "40"
+      "page_number": "40",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 422,
@@ -6750,7 +8855,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "40"
+      "page_number": "40",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 423,
@@ -6766,7 +8876,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "40"
+      "page_number": "40",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 424,
@@ -6782,7 +8897,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czyste mięso surowe bez nastrzykiwania i dodatków",
-      "page_number": "40"
+      "page_number": "40",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 425,
@@ -6798,7 +8918,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "40"
+      "page_number": "40",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 426,
@@ -6814,7 +8939,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "40"
+      "page_number": "40",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 427,
@@ -6830,7 +8960,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "41"
+      "page_number": "41",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 428,
@@ -6846,7 +8981,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "41"
+      "page_number": "41",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 429,
@@ -6862,7 +9002,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "41"
+      "page_number": "41",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 430,
@@ -6878,7 +9023,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "41"
+      "page_number": "41",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 431,
@@ -6894,7 +9044,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "41"
+      "page_number": "41",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 432,
@@ -6910,7 +9065,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "42"
+      "page_number": "42",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 433,
@@ -6926,7 +9086,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "42"
+      "page_number": "42",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 434,
@@ -6942,7 +9107,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "42"
+      "page_number": "42",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 435,
@@ -6958,7 +9128,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 436,
@@ -6974,7 +9149,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 437,
@@ -6990,7 +9170,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 438,
@@ -7006,7 +9191,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 439,
@@ -7022,7 +9212,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 440,
@@ -7038,7 +9233,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 441,
@@ -7054,7 +9254,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 442,
@@ -7070,7 +9275,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "43"
+      "page_number": "43",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 443,
@@ -7086,7 +9296,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "44"
+      "page_number": "44",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 444,
@@ -7102,7 +9317,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "44"
+      "page_number": "44",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 445,
@@ -7118,7 +9338,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "44"
+      "page_number": "44",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 446,
@@ -7134,7 +9359,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "45"
+      "page_number": "45",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 447,
@@ -7150,7 +9380,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "45"
+      "page_number": "45",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 448,
@@ -7166,7 +9401,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "45"
+      "page_number": "45",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 449,
@@ -7182,7 +9422,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "45"
+      "page_number": "45",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 450,
@@ -7198,7 +9443,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 Czysty nabiał, bogate źródło białka, zero zagęszczaczy",
-      "page_number": "46"
+      "page_number": "46",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 451,
@@ -7214,7 +9464,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "46"
+      "page_number": "46",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 452,
@@ -7230,7 +9485,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "46"
+      "page_number": "46",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 453,
@@ -7246,7 +9506,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "46"
+      "page_number": "46",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 454,
@@ -7262,7 +9527,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "46"
+      "page_number": "46",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 455,
@@ -7278,7 +9548,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "47"
+      "page_number": "47",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 456,
@@ -7294,7 +9569,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "48"
+      "page_number": "48",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 457,
@@ -7310,7 +9590,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "48"
+      "page_number": "48",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 458,
@@ -7326,7 +9611,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "48"
+      "page_number": "48",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 459,
@@ -7342,7 +9632,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "48"
+      "page_number": "48",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 460,
@@ -7358,7 +9653,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "48"
+      "page_number": "48",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 461,
@@ -7374,7 +9674,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "48"
+      "page_number": "48",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 462,
@@ -7390,7 +9695,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "48"
+      "page_number": "48",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 463,
@@ -7406,7 +9716,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "48"
+      "page_number": "48",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 464,
@@ -7422,7 +9737,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% naturalne warzywa, witaminy i minerały",
-      "page_number": "48"
+      "page_number": "48",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 465,
@@ -7438,7 +9758,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "49"
+      "page_number": "49",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 466,
@@ -7454,7 +9779,12 @@
       "nutri_score": "D",
       "clean_label": "PROCESSED",
       "clean_label_desc": "Produkt przetworzony (może zawierać azotyn sodu E250 i fosforany)",
-      "page_number": "49"
+      "page_number": "49",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 467,
@@ -7470,7 +9800,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "49"
+      "page_number": "49",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 468,
@@ -7486,7 +9821,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "56"
+      "page_number": "56",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 469,
@@ -7502,7 +9842,12 @@
       "nutri_score": "B",
       "clean_label": "CLEAN",
       "clean_label_desc": "Produkt o dobrym profilu odżywczym",
-      "page_number": "61"
+      "page_number": "61",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 470,
@@ -7518,7 +9863,12 @@
       "nutri_score": "C",
       "clean_label": "CLEAN",
       "clean_label_desc": "Tradycyjny nabiał, naturalne tłuszcze mleczne",
-      "page_number": "66"
+      "page_number": "66",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 471,
@@ -7534,7 +9884,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "66"
+      "page_number": "66",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     },
     {
       "id": 472,
@@ -7550,7 +9905,12 @@
       "nutri_score": "A",
       "clean_label": "CLEAN",
       "clean_label_desc": "🌿 100% czyste mięso drobiowe, wysokie białko, bez chemii",
-      "page_number": "66"
+      "page_number": "66",
+      "date_badge": "Oferta zakończona",
+      "is_urgent": false,
+      "is_active": false,
+      "is_app_deal": false,
+      "app_badge": ""
     }
   ],
   "meal_plan": {

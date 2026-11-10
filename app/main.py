@@ -12,7 +12,7 @@ from app.database import (
     get_active_meal_plan, 
     get_last_sync_info
 )
-from app.scheduler import start_scheduler, run_full_sync_task, is_syncing
+import app.scheduler as scheduler
 from app.config import SCHEDULE_HOURS
 from app.ai.assistant import ask_shopping_assistant
 
@@ -21,13 +21,13 @@ async def lifespan(app: FastAPI):
     # Inicjalizacja bazy
     init_db()
     # Start harmonogramu (7, 15, 18)
-    start_scheduler()
+    scheduler.start_scheduler()
     
     # Jeśli baza jest pusta, uruchom pierwszy sync w tle
     plan = get_active_meal_plan()
     if not plan:
         print("Pierwsze uruchomienie - kolejkowanie wstępnego pobrania danych...")
-        asyncio.create_task(asyncio.to_thread(run_full_sync_task))
+        asyncio.create_task(asyncio.to_thread(scheduler.run_full_sync_task))
         
     yield
 
@@ -46,7 +46,7 @@ def get_status():
     last_sync = get_last_sync_info()
     plan = get_active_meal_plan()
     return {
-        "is_syncing": is_syncing,
+        "is_syncing": scheduler.is_syncing,
         "schedule_hours": SCHEDULE_HOURS,
         "last_sync": last_sync,
         "has_active_plan": plan is not None,
@@ -72,11 +72,10 @@ def get_meal_plan():
 
 @app.post("/api/refresh")
 async def trigger_refresh(background_tasks: BackgroundTasks):
-    global is_syncing
-    if is_syncing:
+    if scheduler.is_syncing:
         return {"status": "ALREADY_RUNNING", "message": "Synchronizacja już trwa w tle."}
         
-    background_tasks.add_task(run_full_sync_task)
+    background_tasks.add_task(scheduler.run_full_sync_task)
     return {"status": "STARTED", "message": "Rozpoczęto pobieranie promocji i generowanie obiadów w tle."}
 
 class AssistantRequest(BaseModel):
